@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
     <div className="flex flex-col h-screen justify-between font-sans">
-      {router.pathname !== '/' && <Header />}
+      {!hiddenHeaderPagePaths.includes(router.pathname) && <Header />}
       <main className="flex flex-col flex-grow">
         <Component {...pageProps} />
       </main>
@@ -15,5 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </div>
   );
 }
+
+const hiddenHeaderPagePaths = ['/', '/try-again'];
 
 export default MyApp;

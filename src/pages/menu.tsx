@@ -1,3 +1,4 @@
+import { sample } from 'lodash';
 import React from 'react';
 
 const Menu = () => {
@@ -5,8 +6,10 @@ const Menu = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
       {theMenu.map(({ description, name }) => (
         <div key={name}>
-          <p className="text-xl">{name}</p>
-          <p className="text-sm">{description}</p>
+          <p className="text-xl tracking-widest">
+            {name} - {sample(['$4.20', '$0.69'])}
+          </p>
+          <p className="text-sm tracking-wide">{description}</p>
         </div>
       ))}
     </div>
