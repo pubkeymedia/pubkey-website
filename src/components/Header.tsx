@@ -6,13 +6,11 @@ import React, { PropsWithChildren } from 'react';
 export const Header = () => {
   return (
     <header className="px-8">
-      <nav>
-        <div className="flex justify-between">
-          <HeaderLink href="/home">Home</HeaderLink>
-          <HeaderLink href="/shop">Shop</HeaderLink>
-          <HeaderLink href="/menu">Bar-Menu</HeaderLink>
-          <HeaderLink href="/contact">Contact</HeaderLink>
-        </div>
+      <nav className="flex justify-between text-xl">
+        <HeaderLink href="/home">Home</HeaderLink>
+        <HeaderLink href="/shop">Shop</HeaderLink>
+        <HeaderLink href="/menu">Bar-Menu</HeaderLink>
+        <HeaderLink href="/contact">Contact</HeaderLink>
       </nav>
     </header>
   );

@@ -1,29 +1,30 @@
-import { GetServerSideProps, NextPage } from 'next';
+import type { NextPage } from 'next';
 import Link from 'next/link';
 import React from 'react';
 import sample from 'lodash/sample';
 
-const TryAgain: NextPage<Props> = ({ quote }) => {
+const quotes = [
+  'You never know what worse luck your bad luck has saved you from',
+  'Remember that sometimes not getting what you want is a wonderful stroke of luck',
+  "I'm a greater believer in luck, and I find the harder I work the more I have of it",
+  'I wandered everywhere, through cities and countries wide. And everywhere I went, the world was on my side',
+];
+const TryAgain: NextPage = () => {
+  const quote = sample(quotes) as string;
   return (
-    <div>
-      <p>{quote}&hellip;</p>
-      <p>
-        &hellip;Care to{' '}
-        <Link href="/">
-          <a className="underline">start</a>
-        </Link>{' '}
-        fresh?
-      </p>
+    <div className="flex flex-grow justify-center items-center">
+      <div className="flex flex-col gap-y-12 max-w-2xl text-3xl text-center">
+        <p>&ldquo;{quote}&hellip;</p>
+        <div>
+          &hellip;Care to{' '}
+          <Link href="/">
+            <a className="underline">start</a>
+          </Link>{' '}
+          fresh?&rdquo;
+        </div>
+      </div>
     </div>
   );
 };
-
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  const quotes = ['hello', 'goodbye', 'yousay', 'yellow', 'submarine'];
-  const quote = sample(quotes) as string;
-  return { props: { quote } };
-};
-
-type Props = { quote: string };
 
 export default TryAgain;

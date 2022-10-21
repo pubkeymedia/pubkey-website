@@ -5,10 +5,10 @@ import { AiFillCaretRight } from 'react-icons/ai';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="flex flex-col h-full items-center justify-center gap-y-8">
       <img height={500} width={800} src="https://placebeard.it/800/500" />
-      <div className="flex flex-col items-center">
-        <p>Enter?</p>
+      <div className="flex flex-col items-center text-3xl">
+        <p className="uppercase tracking-widest">Enter?</p>
         <YesNoSelection />
       </div>
     </div>
@@ -35,36 +35,40 @@ const YesNoSelection: React.FC = () => {
         }
       }
     };
-    document.addEventListener('keyup', onKeyup);
-    return () => document.removeEventListener('keyup', onKeyup);
+    document.addEventListener('keydown', onKeyup);
+    return () => document.removeEventListener('keydown', onKeyup);
   }, []);
 
   return (
-    <div className="grid grid-cols-2 grid-rows-2">
-      {focusedElem === 'yes' ? (
-        <div className="flex items-center">
-          <AiFillCaretRight className="flex text-sm" />
-        </div>
-      ) : (
-        <div />
-      )}
-      <Link href="/home">
-        <a className="flex focus:outline-0" ref={yesRef}>
-          <p>Yes</p>
-        </a>
-      </Link>
-      {focusedElem === 'no' ? (
-        <div className="flex items-center">
-          <AiFillCaretRight className="flex text-sm" />
-        </div>
-      ) : (
-        <div />
-      )}
-      <Link href="/try-again">
-        <a className="flex focus:outline-0" ref={noRef}>
-          <p>No</p>
-        </a>
-      </Link>
+    <div>
+      <div className="relative">
+        {focusedElem === 'yes' ? (
+          <div className="absolute flex items-center right-14 top-0 bottom-0 my-auto">
+            <AiFillCaretRight className="flex text-2xl" />
+          </div>
+        ) : (
+          <div />
+        )}
+        <Link href="/home">
+          <a className="flex focus:outline-0" ref={yesRef}>
+            <p>Yes</p>
+          </a>
+        </Link>
+      </div>
+      <div className="relative">
+        {focusedElem === 'no' ? (
+          <div className="absolute flex items-center right-14 top-0 bottom-0 my-auto">
+            <AiFillCaretRight className="flex text-2xl" />
+          </div>
+        ) : (
+          <div />
+        )}
+        <Link href="/try-again">
+          <a className="flex focus:outline-0" ref={noRef}>
+            <p>No</p>
+          </a>
+        </Link>
+      </div>
     </div>
   );
 };

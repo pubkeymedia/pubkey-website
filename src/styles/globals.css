@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Mister Pixel;
+    src: url('../public/fonts/MP16OSF.ttf') format('truetype');
+  }
+}
