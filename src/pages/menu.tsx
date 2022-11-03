@@ -1,77 +1,127 @@
-import { sample } from 'lodash';
+import Image from 'next/image';
 import React from 'react';
 
 const Menu = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
-      {theMenu.map(({ description, name }) => (
-        <div key={name}>
-          <p className="text-xl tracking-widest">
-            {name} - {sample(['$4.20', '$0.69'])}
-          </p>
-          <p className="text-sm tracking-wide">{description}</p>
+    <div className="flex flex-col items-center">
+      <Image
+        alt="Bar Menu"
+        className="max-w-4xl w-full"
+        height={100}
+        width={1024}
+        src="/images/bar-menu.svg"
+      />
+      <div className="flex flex-col gap-y-16">
+        <div className="flex flex-col items-center md:flex-row gap-x-8">
+          <Image height={420} src="/images/look.svg" width={269} />
+          <FoodTypeSection>
+            <FoodType>Small Bites</FoodType>
+            <div>
+              <FoodName>Cole slaw - $0.69</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+            <div>
+              <FoodName>Cole slaw - $0.69</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+            <div>
+              <FoodName>Cole slaw - $0.69</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+            <div>
+              <FoodName>Cole slaw - $0.69</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+          </FoodTypeSection>
         </div>
-      ))}
+        <div className="flex flex-col md:flex-row-reverse gap-x-8">
+          <Image height={420} src="/images/hot-dogs.svg" width={269} />
+          <FoodTypeSection>
+            <FoodType>Hot Dogs</FoodType>
+            <div>
+              <FoodName>Hot dog 1 - $4.20</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+            <div>
+              <FoodName>Hot dog 2 - $4.20</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+            <div>
+              <FoodName>Hot dog 3 - $4.20</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+            <div>
+              <FoodName>Hot dog 4 - $4.20</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+          </FoodTypeSection>
+        </div>
+        <div className="flex flex-col items-center md:flex-row gap-x-8">
+          <Image height={420} src="/images/burger.svg" width={269} />
+          <FoodTypeSection>
+            <FoodType>Burgers & Sandwiches</FoodType>
+            <div>
+              <FoodName>Burger - $0.69</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+            <div>
+              <FoodName>Sandwich - $4.20</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+            <div>
+              <FoodName>Mystery box - $4.20</FoodName>
+              <p>
+                Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
+                prosciutto frankfurter jerky.
+              </p>
+            </div>
+          </FoodTypeSection>
+        </div>
+      </div>
     </div>
   );
 };
 
-const theMenu = [
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Hot dog 1',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Hot dog 2',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Hot dog 3',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Hot dog 4',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Fries',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Wings',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Burger',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Sandwich',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Mystery box',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Cole slaw',
-  },
-  {
-    description:
-      'Spicy jalapeno shankle leberkas t-bone alcatra porchetta pork. Chislic drumstick cow ham burgdoggen, tongue ground round tri-tip pancetta pork loin porchetta pork chop.',
-    name: 'Beef Jerky',
-  },
-];
+const FoodType: React.FC<
+  React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
+> = (props) => <h2 className="text-4xl tracking-wide uppercase" {...props} />;
+
+const FoodName: React.FC<
+  React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
+> = (props) => <h3 className="underline" {...props} />;
+
+const FoodTypeSection: React.FC<
+  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+> = (props) => <div className="flex flex-col gap-y-4" {...props} />;
 
 export default Menu;

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center max-w-7xl w-full py-8">
+    <div className="flex flex-col items-center w-full">
       <Image
         alt="Bartender"
         className="mb-12 w-full"
@@ -11,7 +11,7 @@ const Home = () => {
         width={1024}
         src="/images/bartender.svg"
       />
-      <div className="gap-8 grid grid-cols-2 w-full">
+      <div className="gap-8 grid grid-cols-1 md:grid-cols-2 w-full">
         <Image
           alt="Watch Pubkey advertisement"
           className="row-span-2 w-full"
@@ -40,13 +40,22 @@ const Home = () => {
           height={512}
           width={512}
         />
-        <Image
-          alt="Live Love advertisement"
-          className="w-full"
-          src="/images/live-love.svg"
-          height={512}
-          width={512}
-        />
+        <div>
+          <Image
+            alt="Feeling Lucky"
+            className="w-full"
+            src="/images/feeling-lucky.svg"
+            height={512}
+            width={512}
+          />
+          <Image
+            alt="Live Love advertisement"
+            className="w-full"
+            src="/images/live-love.svg"
+            height={512}
+            width={512}
+          />
+        </div>
       </div>
     </div>
   );
