@@ -1,13 +1,14 @@
 import type { NextPage } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
 import { AiFillCaretRight } from 'react-icons/ai';
+import landingPageImg from '../public/images/landing-page.gif';
 
 const Home: NextPage = () => {
   return (
     <div className="flex flex-col h-full items-center justify-center gap-y-8">
-      <img height={500} width={800} src="https://placebeard.it/800/500" />
+      <Image alt="Homepage" height={690} width={1024} src={landingPageImg} />
       <div className="flex flex-col items-center text-3xl">
         <p className="uppercase tracking-widest">Enter?</p>
         <YesNoSelection />
@@ -58,14 +59,13 @@ const YesNoSelection: React.FC = () => {
         ) : (
           <div />
         )}
-        <Link href="/home">
-          <a
-            className="flex focus:outline-0"
-            onClick={() => localStorage.setItem('skipSplash', 'true')}
-            ref={yesRef}
-          >
-            <p>Yes</p>
-          </a>
+        <Link
+          className="flex focus:outline-0"
+          onClick={() => localStorage.setItem('skipSplash', 'true')}
+          ref={yesRef}
+          href="/home"
+        >
+          <p>Yes</p>
         </Link>
       </div>
       <div className="relative">
@@ -76,10 +76,8 @@ const YesNoSelection: React.FC = () => {
         ) : (
           <div />
         )}
-        <Link href="/try-again">
-          <a className="flex focus:outline-0" ref={noRef}>
-            <p>No</p>
-          </a>
+        <Link className="flex focus:outline-0" href="/try-again" ref={noRef}>
+          <p>No</p>
         </Link>
       </div>
     </div>

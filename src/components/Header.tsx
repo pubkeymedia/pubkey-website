@@ -21,10 +21,11 @@ const HeaderLink: React.FC<PropsWithChildren<{ href: string }>> = ({ children, h
   const isSelected = router.pathname === href;
 
   return (
-    <Link href={href}>
-      <a className={clsx('p-8', isSelected ? 'border-b-2 border-black' : 'hover:border-b')}>
-        {children}
-      </a>
+    <Link
+      className={clsx('p-8', isSelected ? 'border-b-2 border-black' : 'hover:border-b')}
+      href={href}
+    >
+      {children}
     </Link>
   );
 };

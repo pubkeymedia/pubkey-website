@@ -17,8 +17,8 @@ const TryAgain: NextPage = () => {
         <p>&ldquo;{quote}&hellip;</p>
         <div>
           &hellip;Care to{' '}
-          <Link href="/">
-            <a className="underline">start</a>
+          <Link className="underline" href="/">
+            start
           </Link>{' '}
           fresh?&rdquo;
         </div>
