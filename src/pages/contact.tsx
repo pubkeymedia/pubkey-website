@@ -1,7 +1,8 @@
+import type { NextPage } from 'next';
 import Image from 'next/image';
 import React from 'react';
 
-const Contact = () => {
+const Contact: NextPage = () => {
   return (
     <div className="flex flex-col gap-y-16">
       <Image

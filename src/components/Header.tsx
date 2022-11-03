@@ -22,7 +22,10 @@ const HeaderLink: React.FC<PropsWithChildren<{ href: string }>> = ({ children, h
 
   return (
     <Link
-      className={clsx('p-8', isSelected ? 'border-b-2 border-black' : 'hover:border-b')}
+      className={clsx(
+        'py-6 px-3 md:p-8',
+        isSelected ? 'border-b-2 border-black' : 'hover:border-b'
+      )}
       href={href}
     >
       {children}
