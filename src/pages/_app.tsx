@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import type { AppProps } from 'next/app';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -6,13 +7,20 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
+  const isLandingPage = landingPagePaths.includes(router.pathname);
+
   return (
-    <div className="flex flex-col h-screen justify-between font-sans max-w-7xl mx-auto">
-      {!hiddenHeaderPagePaths.includes(router.pathname) && <Header />}
+    <div
+      className={clsx(
+        isLandingPage && 'bg-gray-300',
+        'flex flex-col h-screen justify-between font-sans max-w-7xl mx-auto'
+      )}
+    >
+      {!isLandingPage && <Header />}
       <main className="px-2 sm:px-8 lg:px-0 flex flex-col flex-grow py-8">
         <Component {...pageProps} />
       </main>
-      {!hiddenHeaderPagePaths.includes(router.pathname) && (
+      {!isLandingPage && (
         <footer className="grid grid-cols-1 md:grid-cols-3 gap-y-6 text-center md:flex-row bg-gray-300 p-8 text-xl">
           <div className="flex flex-col items-center md:items-start">
             <Image alt="Pubkey logo" height={100} width={200} src="/images/logo.svg" />
@@ -48,6 +56,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-const hiddenHeaderPagePaths = ['/', '/try-again'];
+const landingPagePaths = ['/', '/try-again'];
 
 export default MyApp;
