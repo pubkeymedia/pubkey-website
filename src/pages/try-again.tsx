@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 import React from 'react';
 import sample from 'lodash/sample';
+import Image from 'next/image';
 
 const quotes = [
   'You never know what worse luck your bad luck has saved you from',
@@ -13,7 +14,8 @@ const TryAgain: NextPage = () => {
   const quote = sample(quotes) as string;
   return (
     <div className="flex flex-grow justify-center items-center">
-      <div className="flex flex-col gap-y-12 max-w-2xl text-3xl text-center">
+      <div className="flex flex-col gap-y-12 items-center max-w-2xl text-3xl text-center">
+        <Image alt="Dealer with card" height={500} width={500} src="/images/try-again.svg" />
         <p>&ldquo;{quote}&hellip;</p>
         <div>
           &hellip;Care to{' '}

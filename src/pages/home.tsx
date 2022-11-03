@@ -1,20 +1,52 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Home = () => {
   return (
-    <div className="flex flex-grow p-8">
-      <div className="w-full">
-        <img
-          className="h-[569px] object-cover mb-12"
-          width="100%"
-          src="https://placebeard.it/800/500"
+    <div className="flex flex-col items-center max-w-7xl w-full py-8">
+      <Image
+        alt="Bartender"
+        className="mb-12 w-full"
+        height={100}
+        width={1024}
+        src="/images/bartender.svg"
+      />
+      <div className="gap-8 grid grid-cols-2 w-full">
+        <Image
+          alt="Watch Pubkey advertisement"
+          className="row-span-2 w-full"
+          src="/images/watch-pubkey.svg"
+          height={1024}
+          width={512}
         />
-        <div className="gap-8 grid grid-cols-2 grid-rows-6">
-          <img className="row-span-2" src="https://placebeard.it/800/400" />
-          <img className="h-full row-span-3" width="100%" src="https://placebeard.it/800/400" />
-          <img className="h-full row-span-3" width="100%" src="https://placebeard.it/800/400" />
-          <img className="h-full row-span-3" width="100%" src="https://placebeard.it/800/400" />
-        </div>
+        <Image
+          alt="Loser needs another drink"
+          className="w-full"
+          src="/images/you-lose.svg"
+          height={512}
+          width={512}
+        />
+        <Image
+          alt="The orange pill"
+          className="w-full"
+          src="/images/orange-pill.svg"
+          height={512}
+          width={512}
+        />
+        <Image
+          alt="Feeling shitty!"
+          className="w-full"
+          src="/images/maybe-next-time.svg"
+          height={512}
+          width={512}
+        />
+        <Image
+          alt="Live Love advertisement"
+          className="w-full"
+          src="/images/live-love.svg"
+          height={512}
+          width={512}
+        />
       </div>
     </div>
   );
