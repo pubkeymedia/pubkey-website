@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       {!hiddenHeaderPagePaths.includes(router.pathname) && (
         <footer className="grid grid-cols-1 md:grid-cols-3 gap-y-6 text-center md:flex-row bg-gray-300 p-8 text-xl">
           <div className="flex flex-col items-center md:items-start">
-            <Image height={100} width={200} src="/images/logo.svg" />
+            <Image alt="Pubkey logo" height={100} width={200} src="/images/logo.svg" />
             <p>&copy; {new Date().getFullYear()}</p>
             <p>The family you choose!</p>
           </div>

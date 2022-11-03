@@ -1,14 +1,24 @@
-import { Form, Formik } from 'formik';
 import Image from 'next/image';
 import React from 'react';
-import { Input } from '../components/StyledInput';
 
 const Contact = () => {
   return (
     <div className="flex flex-col gap-y-16">
-      <Image className="self-center" height={200} src="/images/slogan.svg" width={1024} />
-      <div className="flex gap-x-48 w-full max-w-5xl">
-        <Image height={400} src="/images/payphone.svg" width={200} />
+      <Image
+        alt="The Pubkey slogan"
+        className="self-center"
+        height={200}
+        src="/images/slogan.svg"
+        width={1024}
+      />
+      <div className="flex flex-col md:flex-row gap-y-24 gap-x-48 w-full max-w-5xl">
+        <Image
+          alt="A payphone"
+          className="self-center"
+          height={400}
+          src="/images/payphone.svg"
+          width={200}
+        />
         <div className="flex flex-col gap-y-8">
           <h2 className="uppercase text-xl">Contact</h2>
           <div>
