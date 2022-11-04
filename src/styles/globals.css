@@ -7,4 +7,13 @@
     font-family: Mister Pixel;
     src: url('../../public/fonts/MP16OSF.ttf') format('truetype');
   }
+  @font-face {
+    font-family: Redaction;
+    src: url('../../public/fonts/Redaction50-Regular.otf') format('opentype');
+  }
+  @font-face {
+    font-family: RedactionItalic;
+    src: url('../../public/fonts/Redaction50-Italic.otf') format('opentype');
+    font-style: italic;
+  }
 }

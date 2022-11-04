@@ -13,16 +13,16 @@ const quotes = [
 const TryAgain: NextPage = () => {
   const quote = sample(quotes) as string;
   return (
-    <div className="flex flex-grow justify-center items-center">
-      <div className="flex flex-col gap-y-12 items-center max-w-2xl text-3xl text-center">
+    <div className="flex flex-grow justify-center items-center tracking-widest">
+      <div className="flex flex-col font-redaction gap-y-12 items-center max-w-2xl text-3xl text-center">
         <Image alt="Dealer with card" height={500} width={500} src="/images/try-again.svg" />
         <p>&ldquo;{quote}&hellip;</p>
         <div>
-          &hellip;Care to{' '}
-          <Link className="underline" href="/">
+          <span className="italic mr-4">&hellip;Care to</span>
+          <Link className="font-sans underline uppercase" href="/">
             start
           </Link>{' '}
-          fresh?&rdquo;
+          <span className="italic">fresh?&rdquo;</span>
         </div>
       </div>
     </div>
