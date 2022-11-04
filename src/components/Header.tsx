@@ -5,7 +5,7 @@ import React, { PropsWithChildren } from 'react';
 
 export const Header = () => {
   return (
-    <header className="px-8">
+    <header className="px-8 max-w-7xl mx-auto w-full">
       <nav className="flex justify-between text-xl">
         <HeaderLink href="/home">Home</HeaderLink>
         <HeaderLink href="/shop">Shop</HeaderLink>
