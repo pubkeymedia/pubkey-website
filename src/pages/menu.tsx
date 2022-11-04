@@ -1,9 +1,11 @@
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
 
 const Menu = () => {
   return (
     <div className="flex flex-col items-center">
+      <NextSeo title="Menu" />
       <Image
         alt="Bar Menu"
         className="max-w-4xl w-full"

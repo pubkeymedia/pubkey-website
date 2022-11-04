@@ -1,10 +1,12 @@
 import type { NextPage } from 'next';
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
 
 const Contact: NextPage = () => {
   return (
     <div className="flex flex-col gap-y-16">
+      <NextSeo title="Contact" />
       <Image
         alt="The Pubkey slogan"
         className="self-center"
