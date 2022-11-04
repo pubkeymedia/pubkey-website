@@ -20,31 +20,31 @@ const Menu = () => {
             <FoodType>Small Bites</FoodType>
             <div>
               <FoodName>Cole slaw - $0.69</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
             <div>
               <FoodName>Cole slaw - $0.69</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
             <div>
               <FoodName>Cole slaw - $0.69</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
             <div>
               <FoodName>Cole slaw - $0.69</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
           </FoodTypeSection>
         </div>
@@ -54,31 +54,31 @@ const Menu = () => {
             <FoodType>Hot Dogs</FoodType>
             <div>
               <FoodName>Hot dog 1 - $4.20</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
             <div>
               <FoodName>Hot dog 2 - $4.20</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
             <div>
               <FoodName>Hot dog 3 - $4.20</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
             <div>
               <FoodName>Hot dog 4 - $4.20</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
           </FoodTypeSection>
         </div>
@@ -88,24 +88,24 @@ const Menu = () => {
             <FoodType>Burgers & Sandwiches</FoodType>
             <div>
               <FoodName>Burger - $0.69</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
             <div>
               <FoodName>Sandwich - $4.20</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
             <div>
               <FoodName>Mystery box - $4.20</FoodName>
-              <p>
+              <FoodDescription>
                 Spicy jalapeno bacon ipsum dolor amet ham tongue capicola beef ball tip meatball
                 prosciutto frankfurter jerky.
-              </p>
+              </FoodDescription>
             </div>
           </FoodTypeSection>
         </div>
@@ -114,13 +114,17 @@ const Menu = () => {
   );
 };
 
+const FoodDescription: React.FC<
+  React.DetailedHTMLProps<React.HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>
+> = (props) => <p className="font-redaction tracking-wider" {...props} />;
+
 const FoodType: React.FC<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
 > = (props) => <h2 className="text-4xl tracking-wide uppercase" {...props} />;
 
 const FoodName: React.FC<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
-> = (props) => <h3 className="underline" {...props} />;
+> = (props) => <h3 className="font-redaction underline text-lg tracking-widest" {...props} />;
 
 const FoodTypeSection: React.FC<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
