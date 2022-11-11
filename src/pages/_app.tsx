@@ -17,11 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         'flex flex-col h-screen justify-between font-sans'
       )}
     >
-      <NextSeo
-        defaultTitle="Pubkey"
-        titleTemplate="Pubkey | %s"
-        description="This needs a short descriptiom."
-      />
+      <NextSeo defaultTitle="Pubkey" titleTemplate="Pubkey | %s" />
 
       {!isLandingPage && <Header />}
       <main className="px-2 sm:px-8 xl:px-0 flex flex-col flex-grow py-8 max-w-7xl mx-auto w-full">

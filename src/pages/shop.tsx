@@ -5,8 +5,10 @@ import React from 'react';
 const ShopPage = () => {
   return (
     <div className="w-full">
-      <NextSeo title="Shop" />
-
+      <NextSeo
+        description="The Pubkey store is the place for merch. Who doesn’t love merch? When I walk into my favorite dive bar I except to see merchandise! And when the trains aren’t running, I want to be able to buy my favorite merch online! So I go straight to the Pubkey online store and pick up my favorite merch straight from my couch!. It rules!"
+        title="Shop"
+      />
       <Image
         alt="Family You Choose"
         className="w-full"

@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -5,6 +6,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="flex flex-col items-center w-full">
+      <NextSeo description="All those other cool websites wish they could be as sweet the Pubkey homepage. It tells the story of a friend who loves video poker and dive bars. His luck isn’t very good. Care to try yours?" />
       <Image
         alt="Bartender"
         className="mb-12 w-full"
