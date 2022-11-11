@@ -9,7 +9,7 @@ const Menu = () => {
       <Image
         alt="Bar Menu"
         className="max-w-4xl w-full"
-        height={100}
+        height={600}
         width={1024}
         src="/images/menu/bar-menu.svg"
       />

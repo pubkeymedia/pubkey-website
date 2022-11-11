@@ -1,3 +1,4 @@
+import { setCookie } from 'cookies-next';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,7 +21,6 @@ const Home: NextPage = () => {
 const YesNoSelection: React.FC = () => {
   const yesRef = useRef<HTMLAnchorElement>(null);
   const noRef = useRef<HTMLAnchorElement>(null);
-  // const { push } = useRouter();
   const [focusedElem, setFocusedElem] = useState<'yes' | 'no'>('yes');
 
   useEffect(() => yesRef.current?.focus(), []);
@@ -42,13 +42,6 @@ const YesNoSelection: React.FC = () => {
     return () => document.removeEventListener('keydown', onKeyup);
   }, []);
 
-  // useEffect(() => {
-  //   const skipSplash = localStorage.getItem('skipSplash');
-  //   if (skipSplash === 'true') {
-  //     push('/home');
-  //   }
-  // }, [push]);
-
   return (
     <div>
       <div className="relative">
@@ -61,7 +54,7 @@ const YesNoSelection: React.FC = () => {
         )}
         <Link
           className="flex focus:outline-0"
-          onClick={() => localStorage.setItem('skipSplash', 'true')}
+          onClick={() => setCookie('skipSplash', 'true')}
           ref={yesRef}
           href="/home"
         >
