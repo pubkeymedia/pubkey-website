@@ -18,7 +18,7 @@ const ShopPage: NextPage<Props> = ({ products }) => {
         width={1024}
         src="/images/shop/hero.gif"
       />
-      <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center">
+      <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center">
         {products.map(({ featuredImage, onlineStoreUrl, priceRange, title }) => (
           <a
             className="flex flex-col justify-between px-2 py-4 rounded-lg shadow-lg shadow-gray-400"
@@ -27,13 +27,13 @@ const ShopPage: NextPage<Props> = ({ products }) => {
             rel="noreferrer"
             target="_blank"
           >
-            <p className="text-xl tracking-widest uppercase">{title}</p>
             <Image
               alt={title}
               height={featuredImage.height}
               src={featuredImage.url}
               width={featuredImage.width}
             />
+            <p className="text-xl tracking-widest uppercase">{title}</p>
             <PriceRange priceRange={priceRange} />
           </a>
         ))}
@@ -44,10 +44,14 @@ const ShopPage: NextPage<Props> = ({ products }) => {
 
 const PriceRange: React.FC<{ priceRange: PriceRange }> = ({ priceRange }) => {
   if (priceRange.maxVariantPrice.amount === priceRange.minVariantPrice.amount) {
-    return <p>{numberToFormattedUsdCurrency(Number(priceRange.maxVariantPrice.amount) / 100)}</p>;
+    return (
+      <p className="text-lg">
+        {numberToFormattedUsdCurrency(Number(priceRange.maxVariantPrice.amount) / 100)}
+      </p>
+    );
   }
   return (
-    <p>
+    <p className="text-lg">
       {numberToFormattedUsdCurrency(Number(priceRange.minVariantPrice.amount) / 100)} &mdash;{' '}
       {numberToFormattedUsdCurrency(Number(priceRange.maxVariantPrice.amount) / 100)}
     </p>
