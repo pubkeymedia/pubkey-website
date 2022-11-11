@@ -10,9 +10,9 @@ const ShopPage = () => {
       <Image
         alt="Family You Choose"
         className="w-full"
-        height={100}
+        height={600}
         width={1024}
-        src="/images/family-you-choose.svg"
+        src="/images/shop/hero.gif"
       />
     </div>
   );

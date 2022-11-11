@@ -11,7 +11,7 @@ const Contact: NextPage = () => {
         alt="The Pubkey slogan"
         className="self-center"
         height={200}
-        src="/images/slogan.svg"
+        src="/images/contact/slogan.svg"
         width={1024}
       />
       <div className="flex flex-col md:flex-row gap-y-24 gap-x-24 lg:gap-x-48 w-full max-w-5xl">
@@ -19,7 +19,7 @@ const Contact: NextPage = () => {
           alt="A payphone"
           className="self-center"
           height={400}
-          src="/images/payphone.svg"
+          src="/images/contact/payphone.svg"
           width={200}
         />
         <div className="flex flex-col gap-y-8">

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { AiFillCaretRight } from 'react-icons/ai';
-import landingPageImg from '../../public/images/landing-page.gif';
+import landingPageImg from '../../public/images/landing-page/landing-page.gif';
 
 const Home: NextPage = () => {
   return (

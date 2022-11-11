@@ -11,11 +11,16 @@ const Menu = () => {
         className="max-w-4xl w-full"
         height={100}
         width={1024}
-        src="/images/bar-menu.svg"
+        src="/images/menu/bar-menu.svg"
       />
       <div className="flex flex-col gap-y-16">
         <div className="flex flex-col items-center md:flex-row gap-x-8">
-          <Image alt="A carton of French fries." height={420} src="/images/look.svg" width={269} />
+          <Image
+            alt="A carton of French fries."
+            height={420}
+            src="/images/menu/look.svg"
+            width={269}
+          />
           <FoodTypeSection>
             <FoodType>Small Bites</FoodType>
             <div>
@@ -49,7 +54,7 @@ const Menu = () => {
           </FoodTypeSection>
         </div>
         <div className="flex flex-col items-center md:flex-row-reverse gap-x-8">
-          <Image alt="A hot dog" height={420} src="/images/hot-dogs.svg" width={269} />
+          <Image alt="A hot dog" height={420} src="/images/menu/hot-dogs.svg" width={269} />
           <FoodTypeSection>
             <FoodType>Hot Dogs</FoodType>
             <div>

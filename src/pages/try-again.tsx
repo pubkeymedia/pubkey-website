@@ -15,7 +15,12 @@ const TryAgain: NextPage = () => {
   return (
     <div className="flex flex-grow justify-center items-center tracking-widest">
       <div className="flex flex-col font-redaction gap-y-12 items-center max-w-2xl text-3xl text-center">
-        <Image alt="Dealer with card" height={500} width={500} src="/images/try-again.svg" />
+        <Image
+          alt="Dealer with card"
+          height={500}
+          width={500}
+          src="/images/try-again/try-again.svg"
+        />
         <p>&ldquo;{quote}&hellip;</p>
         <div>
           <span className="italic mr-4">&hellip;Care to</span>
