@@ -1,4 +1,3 @@
-import { setCookie } from 'cookies-next';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -52,13 +51,8 @@ const YesNoSelection: React.FC = () => {
         ) : (
           <div />
         )}
-        <Link
-          className="flex focus:outline-0"
-          onClick={() => setCookie('skipSplash', 'true')}
-          ref={yesRef}
-          href="/home"
-        >
-          <p>Yes</p>
+        <Link className="flex focus:outline-0" ref={yesRef} href="/home">
+          Yes
         </Link>
       </div>
       <div className="relative">
@@ -70,7 +64,7 @@ const YesNoSelection: React.FC = () => {
           <div />
         )}
         <Link className="flex focus:outline-0" href="/try-again" ref={noRef}>
-          <p>No</p>
+          No
         </Link>
       </div>
     </div>
