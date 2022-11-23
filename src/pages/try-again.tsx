@@ -17,8 +17,8 @@ const TryAgain: NextPage = () => {
       <div className="flex flex-col font-redaction gap-y-12 items-center max-w-2xl text-3xl text-center">
         <Image
           alt="Dealer with card"
-          height={500}
-          width={500}
+          height={750}
+          width={750}
           src="/images/try-again/try-again.svg"
         />
         <p>&ldquo;{quote}&hellip;</p>

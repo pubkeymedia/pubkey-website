@@ -9,7 +9,7 @@ export const Header = () => {
       <nav className="flex justify-between text-xl">
         <HeaderLink href="/home">Home</HeaderLink>
         <HeaderLink href="/shop">Shop</HeaderLink>
-        <HeaderLink href="/menu">Bar-Menu</HeaderLink>
+        <HeaderLink href="/menu">Menu</HeaderLink>
         <HeaderLink href="/contact">Contact</HeaderLink>
       </nav>
     </header>

@@ -29,7 +29,14 @@ const Contact: NextPage = () => {
             <p>New York,</p>
             <p>NY 10011</p>
           </div>
-          <p className="font-redaction text-lg tracking-wider">(305) 773-4249</p>
+          <div className="font-redaction text-lg tracking-wider">
+            <div>
+              <a href="tel:3057734249">(305) 773-4249</a>
+            </div>
+            <div>
+              <a href="mailto:events@pubkey.com">events@pubkey.com</a>
+            </div>
+          </div>
           <div className="flex flex-col font-redaction text-lg tracking-wider">
             <a
               className="hover:text-gray-700"
@@ -54,31 +61,31 @@ const Contact: NextPage = () => {
           <div className="flex flex-col flex-grow font-redaction text-lg italic tracking-widest">
             <div className="flex justify-between">
               <p>Monday</p>
-              <p>12pm-2am</p>
+              <p>Closed</p>
             </div>
             <div className="flex justify-between">
               <p>Tuesday</p>
-              <p>12pm-2am</p>
+              <p>5pm&mdash;2am</p>
             </div>
             <div className="flex justify-between">
               <p>Wednesday</p>
-              <p>12pm-2am</p>
+              <p>5pm&mdash;2am</p>
             </div>
             <div className="flex justify-between">
               <p>Thursday</p>
-              <p>12pm-2am</p>
+              <p>5pm&mdash;4am</p>
             </div>
             <div className="flex justify-between">
               <p>Friday</p>
-              <p>12pm-2am</p>
+              <p>5pm&mdash;4am</p>
             </div>
             <div className="flex justify-between">
               <p>Saturday</p>
-              <p>12pm-2am</p>
+              <p>12pm&mdash;4am</p>
             </div>
             <div className="flex justify-between">
               <p>Sunday</p>
-              <p>12pm-2am</p>
+              <p>12pm&mdash;4am</p>
             </div>
           </div>
         </div>
