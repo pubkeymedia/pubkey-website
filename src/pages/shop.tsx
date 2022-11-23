@@ -21,7 +21,7 @@ const ShopPage: NextPage<Props> = ({ products }) => {
       <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center">
         {products.map(({ featuredImage, onlineStoreUrl, priceRange, title }) => (
           <a
-            className="flex flex-col justify-between px-2 py-4 rounded-lg shadow-lg shadow-gray-400"
+            className="flex flex-col justify-between px-2 py-4 outline outline-black border-2 border-gray-300"
             key={title}
             href={onlineStoreUrl}
             rel="noreferrer"
