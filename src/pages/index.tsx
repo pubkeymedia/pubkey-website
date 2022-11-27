@@ -7,12 +7,17 @@ import landingPageImg from '../../public/images/landing-page/landing-page.gif';
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col h-full items-center justify-center gap-y-8">
+    <div id="container" className="flex flex-col h-full items-center justify-center gap-y-8">
       <Image alt="Homepage" height={420} width={880} src={landingPageImg} />
       <div className="flex flex-col items-center text-3xl">
         <p className="uppercase tracking-widest">Enter?</p>
         <YesNoSelection />
       </div>
+      <style jsx>{`
+        #container {
+          background-image: url('/images/bg.gif');
+        }
+      `}</style>
     </div>
   );
 };

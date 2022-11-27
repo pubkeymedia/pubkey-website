@@ -20,7 +20,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       <NextSeo defaultTitle="Pubkey" titleTemplate="Pubkey | %s" />
 
       {!isLandingPage && <Header />}
-      <main className="px-2 sm:px-8 xl:px-0 flex flex-col flex-grow py-8 max-w-7xl mx-auto w-full">
+      <main
+        className={clsx(
+          !isLandingPage && 'px-2 sm:px-8 xl:px-0 py-8 max-w-7xl mx-auto',
+          'flex flex-col flex-grow w-full'
+        )}
+      >
         <Component {...pageProps} />
       </main>
       {!isLandingPage && <Footer />}

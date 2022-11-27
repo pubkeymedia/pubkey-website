@@ -13,7 +13,7 @@ const quotes = [
 const TryAgain: NextPage = () => {
   const quote = sample(quotes) as string;
   return (
-    <div className="flex flex-grow justify-center items-center tracking-widest">
+    <div id="container" className="flex flex-grow justify-center items-center tracking-widest">
       <div className="flex flex-col font-redaction gap-y-12 items-center max-w-2xl text-3xl text-center">
         <Image
           alt="Dealer with card"
@@ -30,6 +30,11 @@ const TryAgain: NextPage = () => {
           <span className="italic">fresh?&rdquo;</span>
         </div>
       </div>
+      <style jsx>{`
+        #container {
+          background-image: url('/images/bg.gif');
+        }
+      `}</style>
     </div>
   );
 };
