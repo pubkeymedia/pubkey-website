@@ -14,7 +14,7 @@ const Menu = () => {
         width={1024}
         src="/images/menu/bar-menu.svg"
       />
-      <div className="border-8 border-red-400 flex flex-col gap-y-16 py-16 px-8">
+      <div className="border-8 border-red-400 rounded-2xl flex flex-col gap-y-16 py-16 px-8">
         <div className="flex flex-col items-center md:flex-row-reverse md:items-start gap-8">
           <Image
             alt="A hot dog"
@@ -24,60 +24,58 @@ const Menu = () => {
             width={269}
           />
           <FoodTypeSection>
-            <FoodType>Signature Dogs</FoodType>
             <div>
-              <p>
-                <span className="underline">All Dogs $8</span> served with potato chips
-              </p>
-              <p>
-                <sup>*</sup>all hot dogs are made with 100% beef
-              </p>
+              <FoodType>Signature Dogs</FoodType>
+              <p className="font-redaction">Served with potato chips</p>
+              <p className="font-redaction">All hot dogs are made with 100% beef</p>
             </div>
             <div>
-              <FoodName>The Dirty Dog</FoodName>
+              <FoodName>The Dirty Dog &mdash; $8</FoodName>
               <FoodDescription>
-                griddled Allen Bro&apos;s Jumbo dog, purple derp, whole grain mustard, fried shallot
+                Griddled Allen Bro&apos;s Jumbo dog, purple derp, whole grain mustard, fried shallot
                 on a toasted poppy seed bun
               </FoodDescription>
             </div>
             <div>
-              <FoodName>Chicago Classic</FoodName>
+              <FoodName>Chicago Classic &mdash; $8</FoodName>
               <FoodDescription>
-                griddled Vienna Beef dog, yellow mustard, relish, tomato, pickle, onions, sport
+                Griddled Vienna Beef dog, yellow mustard, relish, tomato, pickle, onions, sport
                 peppers, celery salt on a steamed poppy seed bun
               </FoodDescription>
             </div>
             <div>
-              <FoodName>Jersey Ripper</FoodName>
+              <FoodName>
+                Chili Ripper<sup>*</sup> &mdash; $8
+              </FoodName>
               <FoodDescription>
-                fried Allen Bro&apos;s Jumbo dog, chili, dijon, raw onions on a toasted potato bun
+                Fried Allen Bro&apos;s Jumbo dog, chili, dijon, raw onions on a toasted potato bun
               </FoodDescription>
             </div>
             <div>
-              <FoodName>Hello Nasty</FoodName>
+              <FoodName>Al Pastor &mdash; $8</FoodName>
               <FoodDescription>
-                steamed Hebrew National dog, spicy brown mustard, sauerkraut on a steamed potato bun
-              </FoodDescription>
-            </div>
-            <div>
-              <FoodName>Al Pastor</FoodName>
-              <FoodDescription>
-                griddled Hebrew National dog, al pastor sauce, pineapple, cilantro on a toasted
+                Griddled Hebrew National dog, al pastor sauce, pineapple, cilantro on a toasted
                 potato bun
               </FoodDescription>
             </div>
             <div>
-              <FoodName>Big Red</FoodName>
+              <FoodName>Sweet Soy & Slaw &mdash; $8</FoodName>
               <FoodDescription>
-                griddled Hebrew National dog, chinese hot mustard, cabbage, garlic aioli, sweet soy
+                Griddled Hebrew National dog, chinese hot mustard, cabbage, garlic aioli, sweet soy
                 on a toasted potato bun
               </FoodDescription>
             </div>
             <div>
-              <FoodName>Cheesy BFG</FoodName>
+              <FoodName>Cheese Dog &mdash; $7</FoodName>
               <FoodDescription>
-                griddled Vienna Beef dog, hot peppers, onion, cheese sauce on a toasted poppy seed
+                Griddled Vienna Beef dog, hot peppers, onion, cheese sauce on a toasted poppy seed
                 bun
+              </FoodDescription>
+            </div>
+            <div>
+              <FoodName>New York Style &mdash; $7</FoodName>
+              <FoodDescription>
+                Steamed Hebrew National dog, spicy brown mustard, sauerkraut on a steamed potato bun
               </FoodDescription>
             </div>
           </FoodTypeSection>
@@ -92,40 +90,48 @@ const Menu = () => {
             width={269}
           />
           <FoodTypeSection>
-            <FoodType>Sandwiches</FoodType>
             <div>
-              <FoodName>Taylor Ham Sandwich &mdash; $9</FoodName>
-              <FoodDescription>
-                taylor ham, fried egg, cheddar cheese on a seeded hero roll
-              </FoodDescription>
+              <FoodType>Sandwiches</FoodType>
+              <p className="font-redaction">ALL sandwiches served with pickle</p>
             </div>
             <div>
               <FoodName>Grilled Cheese &mdash; $11</FoodName>
-              <FoodDescription>american, cheddar, tomato, basil on thick cut toast</FoodDescription>
+              <FoodDescription>American, cheddar, tomato, basil on thick cut toast</FoodDescription>
             </div>
             <div>
-              <FoodName>Chop Cheese &mdash; $14</FoodName>
+              <FoodName>
+                Chop Cheese<sup>*</sup> &mdash; $14
+              </FoodName>
               <FoodDescription>
-                wagyu, pepper, onions, american cheese, bodega sauce on a hero roll
+                Wagyu, pepper, onions, american cheese, bodega sauce on a hero roll
               </FoodDescription>
             </div>
             <div>
-              <FoodName>Chicken Katsu Sando &mdash; $15</FoodName>
-              <FoodDescription>katsu sauce, cabbage, lemon mayo on thick cut toast</FoodDescription>
-            </div>
-            <div>
-              <FoodName>Porchetta Sandwich &mdash; $17</FoodName>
+              <FoodName>
+                Fried Chicken<sup>*</sup> &mdash; $15
+              </FoodName>
               <FoodDescription>
-                sliced porchetta, chimichurri, pickled red onions, chicharrones on a hero roll
+                Katsu sauce (contains shrimp), cabbage, lemon mayo, on thick cut toast
               </FoodDescription>
             </div>
             <div>
-              <FoodName>Smash Burger</FoodName>
+              <FoodName>
+                Porchetta Hero<sup>*</sup> &mdash; $16
+              </FoodName>
+              <FoodDescription>
+                Sliced porchetta, pork rinds, garlic aioli, chimichurri, pickled red onions, on a
+                hero roll
+              </FoodDescription>
+            </div>
+            <div>
+              <FoodName>
+                Smash Burger<sup>*</sup>
+              </FoodName>
               <FoodDescription>
                 ¼ lb Wagyu, cheese, onion, pickles, pub sauce, on a seeded potato roll
               </FoodDescription>
               <p className="text-sm">
-                (Single $13; Double $16; Bacon crumble +$2; Fried Egg +$1.50)
+                (Single $14; Double $17; Bacon +$3; Egg<sup>*</sup> +$2)
               </p>
             </div>
           </FoodTypeSection>
@@ -143,20 +149,20 @@ const Menu = () => {
             <FoodTypeSection className="text-center">
               <FoodType>Snacks</FoodType>
               <div>
-                <FoodName>Potato Salad &mdash; $5</FoodName>
-                <FoodDescription>kewpie mayo, celery, sunflower seeds</FoodDescription>
+                <FoodName>Fried Mutz &mdash; $12</FoodName>
+                <FoodDescription>Arrabiata sauce</FoodDescription>
+              </div>
+              <div>
+                <FoodName>&ldquo;Show Me&rdquo; Potato Salad &mdash; $5</FoodName>
+                <FoodDescription>Kewpie mayo, celery, sunflower seeds</FoodDescription>
               </div>
               <div>
                 <FoodName>Chicharrones &mdash; $8</FoodName>
-                <FoodDescription>pimenton</FoodDescription>
+                <FoodDescription>Pimenton</FoodDescription>
               </div>
               <div>
                 <FoodName>Waffle Fries &mdash; $9</FoodName>
-                <FoodDescription>cheesy +$2 chili & cheesy +$3 key&apos;d up +$4</FoodDescription>
-              </div>
-              <div>
-                <FoodName>Fried Mutz &mdash; $10</FoodName>
-                <FoodDescription>arrabiata sauce</FoodDescription>
+                <FoodDescription>Cheese dip +$3 Chili +$4 Key&apos;d up +$5</FoodDescription>
               </div>
             </FoodTypeSection>
           </div>
@@ -169,10 +175,14 @@ const Menu = () => {
               width={269}
             />
             <FoodTypeSection className="text-center">
-              <FoodType>Wings</FoodType>
-              <div className="font-redaction tracking-wide">
-                <p>Served with blue cheese and celery</p>
-                <p>6 for $11 ~-~ 12 for $21</p>
+              <div>
+                <FoodType>
+                  Hot Wings<sup>*</sup>
+                </FoodType>
+                <div className="font-redaction tracking-wide">
+                  <p>Served with blue cheese and celery</p>
+                  <p>6 for $11 ~-~ 12 for $21</p>
+                </div>
               </div>
               <div className="font-redaction tracking-wide">
                 <p>Buffalo</p>
@@ -181,6 +191,10 @@ const Menu = () => {
               </div>
             </FoodTypeSection>
           </div>
+          <p className="text-xs tracking-wide">
+            <sup>*</sup>Consuming raw or uncooked meats, poultry, seafood, shellfish or eggs may
+            increase your risk of food borne illness.
+          </p>
         </div>
       </div>
     </div>
@@ -201,7 +215,7 @@ const FoodType: React.FC<
 
 const FoodName: React.FC<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
-> = (props) => <h3 className="font-redaction underline text-lg tracking-widest" {...props} />;
+> = (props) => <h3 className="font-bold text-lg tracking-widest" {...props} />;
 
 const FoodTypeSection: React.FC<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
