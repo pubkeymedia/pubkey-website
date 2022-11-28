@@ -1,3 +1,4 @@
+import { Transition } from '@headlessui/react';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,9 +7,34 @@ import { AiFillCaretRight } from 'react-icons/ai';
 import landingPageImg from '../../public/images/landing-page/landing-page.gif';
 
 const Home: NextPage = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  useEffect(() => {
+    const popupTimeout = setTimeout(() => setShowPopup(true), 2_500);
+    return () => clearTimeout(popupTimeout);
+  }, []);
+
   return (
     <div id="container" className="flex flex-col h-full items-center justify-center gap-y-8">
-      <Image alt="Homepage" height={420} width={880} src={landingPageImg} />
+      <div className="relative">
+        <Transition
+          className="absolute h-16 w-36 sm:h-32 sm:w-48 md:h-44 md:w-52 -top-8 sm:top-16 left-1/2 sm:left-2/3 lg:left-auto lg:-right-12 lg:top-1/2"
+          enter="transition-transform duration-200 ease-in"
+          enterFrom="scale-0 rotate-180"
+          enterTo="scale-100 rotate-0"
+          show={showPopup}
+        >
+          <Link href="/shop">
+            <Image
+              alt="Homepage"
+              className="animate-bounce"
+              height={169}
+              width={210}
+              src="/images/landing-page/popup.svg"
+            />
+          </Link>
+        </Transition>
+        <Image alt="Homepage" height={420} width={880} src={landingPageImg} />
+      </div>
       <div className="flex flex-col items-center text-3xl">
         <p className="uppercase tracking-widest">Enter?</p>
         <YesNoSelection />
