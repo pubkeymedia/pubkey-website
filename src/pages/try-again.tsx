@@ -19,7 +19,7 @@ const TryAgain: NextPage = () => {
           alt="Dealer with card"
           height={750}
           width={750}
-          src="/images/try-again/try-again.svg"
+          src="/images/try-again/try-again.gif"
         />
         <p>&ldquo;{quote}&hellip;</p>
         <div>
