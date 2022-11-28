@@ -61,31 +61,31 @@ const Contact: NextPage = () => {
           <div className="flex flex-col flex-grow font-redaction text-lg italic tracking-widest">
             <div className="flex justify-between">
               <p>Monday</p>
-              <p>Closed</p>
+              <p>1pm&mdash;2am</p>
             </div>
             <div className="flex justify-between">
               <p>Tuesday</p>
-              <p>5pm&mdash;2am</p>
+              <p>1pm&mdash;2am</p>
             </div>
             <div className="flex justify-between">
               <p>Wednesday</p>
-              <p>5pm&mdash;2am</p>
+              <p>1pm&mdash;2am</p>
             </div>
             <div className="flex justify-between">
               <p>Thursday</p>
-              <p>5pm&mdash;4am</p>
+              <p>1pm&mdash;4am</p>
             </div>
             <div className="flex justify-between">
               <p>Friday</p>
-              <p>5pm&mdash;4am</p>
+              <p>1pm&mdash;4am</p>
             </div>
             <div className="flex justify-between">
               <p>Saturday</p>
-              <p>12pm&mdash;4am</p>
+              <p>1pm&mdash;4am</p>
             </div>
             <div className="flex justify-between">
               <p>Sunday</p>
-              <p>12pm&mdash;4am</p>
+              <p>12pm&mdash;2am</p>
             </div>
           </div>
         </div>
