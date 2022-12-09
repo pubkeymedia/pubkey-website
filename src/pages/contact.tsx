@@ -34,7 +34,7 @@ const Contact: NextPage = () => {
               <a href="tel:3057734249">(305) 773-4249</a>
             </div>
             <div>
-              <a href="mailto:events@pubkey.com">events@pubkey.com</a>
+              <a href="mailto:events@pubkey.io">events@pubkey.io</a>
             </div>
           </div>
           <div className="flex flex-col font-redaction text-lg tracking-wider">
