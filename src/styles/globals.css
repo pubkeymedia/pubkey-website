@@ -12,8 +12,13 @@
     src: url('../../public/fonts/Redaction50-Regular.otf') format('opentype');
   }
   @font-face {
-    font-family: RedactionItalic;
+    font-family: Redaction;
     src: url('../../public/fonts/Redaction50-Italic.otf') format('opentype');
     font-style: italic;
+  }
+  @font-face {
+    font-family: Redaction;
+    font-weight: bold;
+    src: url('../../public/fonts/Redaction50-Bold.otf') format('opentype');
   }
 }

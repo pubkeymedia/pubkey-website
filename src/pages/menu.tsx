@@ -25,22 +25,22 @@ const Menu = () => {
           />
           <FoodTypeSection>
             <div>
-              <FoodType>Signature Dogs</FoodType>
+              <FoodType>Hot Dogs</FoodType>
               <p className="font-redaction">Served with potato chips</p>
               <p className="font-redaction">All hot dogs are made with 100% beef</p>
             </div>
             <div>
               <FoodName>The Dirty Dog &mdash; $8</FoodName>
               <FoodDescription>
-                Griddled Allen Bro&apos;s Jumbo dog, purple derp, whole grain mustard, fried shallot
-                on a toasted poppy seed bun
+                Allen Bro&apos;s Jumbo, purple derp, whole grain mustard, fried shallot, poppy seed
+                bun
               </FoodDescription>
             </div>
             <div>
               <FoodName>Chicago Classic &mdash; $8</FoodName>
               <FoodDescription>
-                Griddled Vienna Beef dog, yellow mustard, relish, tomato, pickle, onions, sport
-                peppers, celery salt on a steamed poppy seed bun
+                Vienna Beef, yellow mustard, neon relish, tomato, pickle, onions, sport peppers,
+                celery salt, poppy seed bun
               </FoodDescription>
             </div>
             <div>
@@ -48,34 +48,31 @@ const Menu = () => {
                 Chili Ripper<sup>*</sup> &mdash; $8
               </FoodName>
               <FoodDescription>
-                Fried Allen Bro&apos;s Jumbo dog, chili, dijon, raw onions on a toasted potato bun
+                Allen Bro&apos;s Jumbo, wagyu chili, dijon, raw onions, potato bun (want cheese?)
               </FoodDescription>
             </div>
             <div>
               <FoodName>Al Pastor &mdash; $8</FoodName>
               <FoodDescription>
-                Griddled Hebrew National dog, al pastor sauce, pineapple, cilantro on a toasted
-                potato bun
+                Vienna Beef, al pastor sauce, pineapple, cilantro, potato bun
               </FoodDescription>
             </div>
             <div>
               <FoodName>Sweet Soy & Slaw &mdash; $8</FoodName>
               <FoodDescription>
-                Griddled Hebrew National dog, chinese hot mustard, cabbage, garlic aioli, sweet soy
-                on a toasted potato bun
+                Hebrew National, chinese hot mustard, cabbage, garlic aioli, sweet soy, potato bun
               </FoodDescription>
             </div>
             <div>
               <FoodName>Cheese Dog &mdash; $7</FoodName>
               <FoodDescription>
-                Griddled Vienna Beef dog, hot peppers, onion, cheese sauce on a toasted poppy seed
-                bun
+                Vienna Beef, hot peppers, onion, cheese sauce, poppy seed bun
               </FoodDescription>
             </div>
             <div>
               <FoodName>New York Style &mdash; $7</FoodName>
               <FoodDescription>
-                Steamed Hebrew National dog, spicy brown mustard, sauerkraut on a steamed potato bun
+                Hebrew National, spicy brown mustard, beer braised sauerkraut, potato bun
               </FoodDescription>
             </div>
           </FoodTypeSection>
@@ -92,18 +89,18 @@ const Menu = () => {
           <FoodTypeSection>
             <div>
               <FoodType>Sandwiches</FoodType>
-              <p className="font-redaction">ALL sandwiches served with pickle</p>
+              <p className="font-redaction">All sandwiches served with pickle</p>
             </div>
             <div>
               <FoodName>Grilled Cheese &mdash; $11</FoodName>
-              <FoodDescription>American, cheddar, tomato, basil on thick cut toast</FoodDescription>
+              <FoodDescription>American, cheddar, tomato, basil, thick cut toast</FoodDescription>
             </div>
             <div>
               <FoodName>
                 Chop Cheese<sup>*</sup> &mdash; $14
               </FoodName>
               <FoodDescription>
-                Wagyu, pepper, onions, american cheese, bodega sauce on a hero roll
+                Wagyu, pepper, onions, American cheese, bodega sauce, hero roll
               </FoodDescription>
             </div>
             <div>
@@ -111,16 +108,16 @@ const Menu = () => {
                 Fried Chicken<sup>*</sup> &mdash; $15
               </FoodName>
               <FoodDescription>
-                Katsu sauce (contains shrimp), cabbage, lemon mayo, on thick cut toast
+                Katsu sauce (contains shellfish), slaw, lemon mayo, thick cut toast
               </FoodDescription>
             </div>
             <div>
               <FoodName>
-                Porchetta Hero<sup>*</sup> &mdash; $16
+                Super Pork Hero<sup>*</sup> &mdash; $16
               </FoodName>
               <FoodDescription>
-                Sliced porchetta, pork rinds, garlic aioli, chimichurri, pickled red onions, on a
-                hero roll
+                Sliced porchetta, pork rinds, garlic aioli, chimichurri, pickled red onion, hero
+                roll
               </FoodDescription>
             </div>
             <div>
@@ -128,45 +125,26 @@ const Menu = () => {
                 Smash Burger<sup>*</sup>
               </FoodName>
               <FoodDescription>
-                ¼ lb Wagyu, cheese, onion, pickles, pub sauce, on a seeded potato roll
+                ¼ lb. Wagyu, cheese, sauted onion, pickles, pub sauce, seeded potato roll
               </FoodDescription>
               <p className="text-sm">
-                (Single $14; Double $17; Bacon +$3; Egg<sup>*</sup> +$2)
+                Single $14 Double $17 Bacon +$3 Egg<sup>*</sup> +$2
               </p>
+            </div>
+            <div>
+              <FoodName>
+                Dirty Burg<sup>*</sup> &mdash; $18
+              </FoodName>
+              <FoodDescription>
+                ¼ lb. Wagyu, fried mozzerella, shrettuce, hot peppers, pickled red onion, seeded
+                potato roll
+              </FoodDescription>
             </div>
           </FoodTypeSection>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-y-16">
-          <div className="relative">
-            <Image
-              alt="A carton of French fries."
-              className="absolute h-full"
-              height={420}
-              src="/images/menu/look.svg"
-              width={269}
-            />
-            <FoodTypeSection className="text-center">
-              <FoodType>Snacks</FoodType>
-              <div>
-                <FoodName>Fried Mutz &mdash; $12</FoodName>
-                <FoodDescription>Arrabiata sauce</FoodDescription>
-              </div>
-              <div>
-                <FoodName>&ldquo;Show Me&rdquo; Potato Salad &mdash; $5</FoodName>
-                <FoodDescription>Kewpie mayo, celery, sunflower seeds</FoodDescription>
-              </div>
-              <div>
-                <FoodName>Chicharrones &mdash; $8</FoodName>
-                <FoodDescription>Pimenton</FoodDescription>
-              </div>
-              <div>
-                <FoodName>Waffle Fries &mdash; $9</FoodName>
-                <FoodDescription>Cheese dip +$3 Chili +$4 Key&apos;d up +$5</FoodDescription>
-              </div>
-            </FoodTypeSection>
-          </div>
-          <div className="relative md:static">
+          <div className="relative md:static flex flex-col flex-grow h-full justify-between">
             <Image
               alt="A chicken wing."
               className="absolute h-full md:h-auto"
@@ -180,18 +158,59 @@ const Menu = () => {
                   Hot Wings<sup>*</sup>
                 </FoodType>
                 <div className="font-redaction tracking-wide">
-                  <p>Served with blue cheese and celery</p>
+                  <p>Served with celery, blue cheese or ranch</p>
                   <p>6 for $11 ~-~ 12 for $21</p>
                 </div>
               </div>
               <div className="font-redaction tracking-wide">
-                <p>Buffalo</p>
-                <p>Sriracha Honey</p>
-                <p>Half & Half (minimum 12 wings)</p>
+                <p>
+                  <span className="font-bold">Buffalo</span>
+                  <span> (wet)</span>
+                </p>
+                <p>
+                  <span className="font-bold">Sriracha Honey</span>
+                  <span> (wet)</span>
+                </p>
+                <p>
+                  <span className="font-bold">Curry</span>
+                  <span> (dry)</span>
+                </p>
+                <p>
+                  <span className="font-bold">Red BBQ</span>
+                  <span> (dry)</span>
+                </p>
               </div>
             </FoodTypeSection>
           </div>
-          <p className="text-xs tracking-wide">
+          <div className="relative">
+            <Image
+              alt="A carton of French fries."
+              className="absolute h-full"
+              height={420}
+              src="/images/menu/look.svg"
+              width={269}
+            />
+            <FoodTypeSection className="text-center">
+              <FoodType>Snacks</FoodType>
+              <div>
+                <FoodName>Fried Mozzerella &mdash; $12</FoodName>
+                <FoodDescription>Arrabiata sauce</FoodDescription>
+              </div>
+              <div>
+                <FoodName>Show Me Potato Salad! &mdash; $5</FoodName>
+                <FoodDescription>Kewpie mayo, celery, sunflower seeds</FoodDescription>
+              </div>
+              <div>
+                <FoodName>Chicharrones &mdash; $8</FoodName>
+                <FoodDescription>Pimenton</FoodDescription>
+              </div>
+              <div>
+                <FoodName>Waffle Fries &mdash; $9</FoodName>
+                <FoodDescription>Cheese dip +$3 Wagyu Chili +$4 Key&apos;d up +$5</FoodDescription>
+              </div>
+            </FoodTypeSection>
+          </div>
+          <p className="max-w-md text-xs tracking-wide">
             <sup>*</sup>Consuming raw or uncooked meats, poultry, seafood, shellfish or eggs may
             increase your risk of food borne illness.
           </p>
