@@ -2,6 +2,8 @@ import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Home = () => {
   return (
@@ -14,6 +16,34 @@ const Home = () => {
         width={1024}
         src="/images/homepage/bartender.gif"
       />
+      <Carousel
+        autoPlay
+        className="h-96 w-96"
+        infiniteLoop
+        showIndicators={false}
+        showStatus={false}
+      >
+        <Image
+          alt="Beer falling over"
+          height={384}
+          width={384}
+          src="/images/homepage/carousel/beer.gif"
+        />
+        <Image
+          alt="Burger being built"
+          height={384}
+          width={384}
+          src="/images/homepage/carousel/burger.gif"
+        />
+        <Image
+          alt="Hot dog being built"
+          height={384}
+          width={384}
+          src="/images/homepage/carousel/dog.gif"
+        />
+        <Image alt="Hot dog" height={384} width={384} src="/images/homepage/carousel/ny-dog.png" />
+        <Image alt="Beer" height={384} width={384} src="/images/homepage/carousel/beer.png" />
+      </Carousel>
       <div className="gap-8 grid grid-cols-1 md:grid-cols-2 w-full">
         <Image
           alt="Watch Pubkey advertisement"
