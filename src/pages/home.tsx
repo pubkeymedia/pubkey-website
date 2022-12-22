@@ -15,7 +15,7 @@ const Home = () => {
         width={1024}
         src="/images/homepage/bartender.gif"
       />
-      <Marquee speed={45}>
+      <Marquee gradient={false} speed={45}>
         <Image
           alt="Beer falling over"
           height={384}
