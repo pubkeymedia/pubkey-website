@@ -23,6 +23,7 @@ const Home = () => {
         showIndicators={false}
         showStatus={false}
         showThumbs={false}
+        swipeable={false}
       >
         <Image
           alt="Beer falling over"
