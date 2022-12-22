@@ -22,6 +22,7 @@ const Home = () => {
         infiniteLoop
         showIndicators={false}
         showStatus={false}
+        showThumbs={false}
       >
         <Image
           alt="Beer falling over"
