@@ -2,6 +2,7 @@ import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Marquee from 'react-fast-marquee';
 
 const Home = () => {
   return (
@@ -9,11 +10,33 @@ const Home = () => {
       <NextSeo description="All those other cool websites wish they could be as sweet the Pubkey homepage. It tells the story of a friend who loves video poker and dive bars. His luck isn’t very good. Care to try yours?" />
       <Image
         alt="Bartender"
-        className="mb-12 w-full"
+        className="w-full"
         height={600}
         width={1024}
         src="/images/homepage/bartender.gif"
       />
+      <Marquee gradient={false} speed={45}>
+        <Image
+          alt="Beer falling over"
+          height={384}
+          width={384}
+          src="/images/homepage/carousel/beer.gif"
+        />
+        <Image
+          alt="Burger being built"
+          height={384}
+          width={384}
+          src="/images/homepage/carousel/burger.gif"
+        />
+        <Image
+          alt="Hot dog being built"
+          height={384}
+          width={384}
+          src="/images/homepage/carousel/dog.gif"
+        />
+        <Image alt="Hot dog" height={384} width={384} src="/images/homepage/carousel/ny-dog.png" />
+        <Image alt="Beer" height={384} width={384} src="/images/homepage/carousel/beer.png" />
+      </Marquee>
       <div className="gap-8 grid grid-cols-1 md:grid-cols-2 w-full">
         <Image
           alt="Watch Pubkey advertisement"
