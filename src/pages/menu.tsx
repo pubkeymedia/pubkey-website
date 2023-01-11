@@ -58,12 +58,6 @@ const Menu = () => {
               </FoodDescription>
             </div>
             <div>
-              <FoodName>Sweet Soy & Slaw &mdash; $8</FoodName>
-              <FoodDescription>
-                Hebrew National, chinese hot mustard, cabbage, garlic aioli, sweet soy, potato bun
-              </FoodDescription>
-            </div>
-            <div>
               <FoodName>Cheese Dog &mdash; $7</FoodName>
               <FoodDescription>
                 Vienna Beef, hot peppers, onion, cheese sauce, poppy seed bun
@@ -113,11 +107,10 @@ const Menu = () => {
             </div>
             <div>
               <FoodName>
-                Super Pork Hero<sup>*</sup> &mdash; $16
+                Chicky Chicky Parm<sup>*</sup> &mdash; $15
               </FoodName>
               <FoodDescription>
-                Sliced porchetta, pork rinds, garlic aioli, chimichurri, pickled red onion, hero
-                roll
+                Breaded chicken cutlet, fried mozzerella, arrabiata, seeded potato bun
               </FoodDescription>
             </div>
             <div>
@@ -197,8 +190,8 @@ const Menu = () => {
                 <FoodDescription>Arrabiata sauce</FoodDescription>
               </div>
               <div>
-                <FoodName>Show Me Potato Salad! &mdash; $5</FoodName>
-                <FoodDescription>Kewpie mayo, celery, sunflower seeds</FoodDescription>
+                <FoodName>Wagyu Chili &mdash; $11</FoodName>
+                <FoodDescription>Diced onion, lime crema, fried shallot</FoodDescription>
               </div>
               <div>
                 <FoodName>Chicharrones &mdash; $8</FoodName>

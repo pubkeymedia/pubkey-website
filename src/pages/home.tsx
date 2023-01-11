@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import Marquee from 'react-fast-marquee';
+import { Ticker } from '../components/homepage/Ticker';
 
 const Home = () => {
   return (
@@ -10,33 +10,12 @@ const Home = () => {
       <NextSeo description="All those other cool websites wish they could be as sweet the Pubkey homepage. It tells the story of a friend who loves video poker and dive bars. His luck isn’t very good. Care to try yours?" />
       <Image
         alt="Bartender"
-        className="w-full"
-        height={600}
-        width={1024}
+        className="max-w-5xl w-full"
+        height={2850}
+        width={5100}
         src="/images/homepage/bartender.gif"
       />
-      <Marquee gradient={false} speed={45}>
-        <Image
-          alt="Beer falling over"
-          height={384}
-          width={384}
-          src="/images/homepage/carousel/beer.gif"
-        />
-        <Image
-          alt="Burger being built"
-          height={384}
-          width={384}
-          src="/images/homepage/carousel/burger.gif"
-        />
-        <Image
-          alt="Hot dog being built"
-          height={384}
-          width={384}
-          src="/images/homepage/carousel/dog.gif"
-        />
-        <Image alt="Hot dog" height={384} width={384} src="/images/homepage/carousel/ny-dog.png" />
-        <Image alt="Beer" height={384} width={384} src="/images/homepage/carousel/beer.png" />
-      </Marquee>
+      <Ticker />
       <div className="gap-8 grid grid-cols-1 md:grid-cols-2 w-full">
         <Image
           alt="Watch Pubkey advertisement"
