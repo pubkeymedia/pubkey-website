@@ -29,13 +29,9 @@ const Contact: NextPage = () => {
             <p>New York,</p>
             <p>NY 10011</p>
           </div>
-          <div className="font-redaction text-lg tracking-wider">
-            <div>
-              <a href="tel:3057734249">(305) 773-4249</a>
-            </div>
-            <div>
-              <a href="mailto:events@pubkey.io">events@pubkey.io</a>
-            </div>
+          <div className="flex flex-col font-redaction text-lg tracking-wider">
+            <a href="tel:3057734249">(305) 773-4249</a>
+            <a href="mailto:events@port8333.io">events@port8333.io</a>
           </div>
           <div className="flex flex-col font-redaction text-lg tracking-wider">
             <a
