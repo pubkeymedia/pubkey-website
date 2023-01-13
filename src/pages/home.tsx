@@ -12,8 +12,9 @@ const Home = () => {
         alt="Bartender"
         className="max-w-5xl w-full"
         height={2850}
-        width={5100}
+        priority
         src="/images/homepage/bartender.gif"
+        width={5100}
       />
       <Ticker />
       <div className="gap-8 grid grid-cols-1 md:grid-cols-2 w-full">
