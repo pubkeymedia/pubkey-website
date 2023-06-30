@@ -14,7 +14,7 @@ const Contact: NextPage = () => {
         src="/images/contact/slogan.svg"
         width={1024}
       />
-      <div className="flex flex-col md:flex-row gap-y-24 gap-x-24 lg:gap-x-48 w-full max-w-5xl">
+      <div className="flex flex-col md:flex-row gap-16 lg:gap-x-48 w-full max-w-5xl">
         <Image
           alt="A payphone"
           className="self-center"
@@ -26,12 +26,21 @@ const Contact: NextPage = () => {
           <h2 className="uppercase text-xl tracking-wider">Contact</h2>
           <div className="font-redaction text-lg tracking-wider">
             <p>85 Washington Pl.</p>
-            <p>New York,</p>
-            <p>NY 10011</p>
+            <p>New York, NY 10011</p>
           </div>
-          <div className="flex flex-col font-redaction text-lg tracking-wider">
-            <a href="tel:3057734249">(305) 773-4249</a>
-            <a href="mailto:events@port8333.io">events@port8333.io</a>
+          <div className="flex flex-col font-redaction text-lg tracking-wider gap-y-1">
+            <div>
+              <p className="text-sm">Call or Text</p>
+              <a href="tel:3057734249">(305) 773-4249</a>
+            </div>
+            <div>
+              <p>
+                <a href="mailto:events@port8333.io">events@port8333.io</a>
+              </p>
+              <p>
+                Job Inquiries: <a href="mailto:info@port8333.io">info@port8333.io</a>
+              </p>
+            </div>
           </div>
           <div className="flex flex-col font-redaction text-lg tracking-wider">
             <a
@@ -57,19 +66,19 @@ const Contact: NextPage = () => {
           <div className="flex flex-col flex-grow font-redaction text-lg italic tracking-widest">
             <div className="flex justify-between">
               <p>Monday</p>
-              <p>1pm&mdash;2am</p>
+              <p>3pm&mdash;2am</p>
             </div>
             <div className="flex justify-between">
               <p>Tuesday</p>
-              <p>1pm&mdash;2am</p>
+              <p>3pm&mdash;2am</p>
             </div>
             <div className="flex justify-between">
               <p>Wednesday</p>
-              <p>1pm&mdash;2am</p>
+              <p>3pm&mdash;2am</p>
             </div>
             <div className="flex justify-between">
               <p>Thursday</p>
-              <p>1pm&mdash;4am</p>
+              <p>3pm&mdash;4am</p>
             </div>
             <div className="flex justify-between">
               <p>Friday</p>
@@ -81,7 +90,7 @@ const Contact: NextPage = () => {
             </div>
             <div className="flex justify-between">
               <p>Sunday</p>
-              <p>12pm&mdash;2am</p>
+              <p>1pm&mdash;2am</p>
             </div>
           </div>
         </div>
