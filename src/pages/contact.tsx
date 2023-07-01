@@ -28,19 +28,21 @@ const Contact: NextPage = () => {
             <p>85 Washington Pl.</p>
             <p>New York, NY 10011</p>
           </div>
-          <div className="flex flex-col font-redaction text-lg tracking-wider gap-y-1">
+          <div className="flex flex-col font-redaction text-lg tracking-wider gap-y-3">
             <div>
               <p className="text-sm">Call or Text</p>
               <a href="tel:3057734249">(305) 773-4249</a>
             </div>
-            <div>
-              <p>
-                <a href="mailto:events@port8333.io">events@port8333.io</a>
-              </p>
-              <p>
-                Job Inquiries: <a href="mailto:info@port8333.io">info@port8333.io</a>
-              </p>
-            </div>
+            <p className="leading-6">
+              Job Inquiries: <a href="mailto:info@port8333.io">info@port8333.io</a>
+            </p>
+            <a
+              href="https://pubkey.tripleseat.com/party_request/30585"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Book Your Event
+            </a>
           </div>
           <div className="flex flex-col font-redaction text-lg tracking-wider">
             <a
