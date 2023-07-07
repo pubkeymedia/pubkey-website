@@ -263,7 +263,7 @@ const Menu = () => {
                 <p>Friday &mdash; Sunday</p>
               </div>
             </div>
-            <Image alt="Drunk cat" src={cat} />
+            <Image alt="Drunk cat" placeholder="blur" src={cat} />
           </div>
         </div>
       </div>
