@@ -36,7 +36,8 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   };
 };
 
-const formatIsoDate = (isoDate: string) => DateTime.fromISO(isoDate).toFormat('dd LLL yyyy h:mm a');
+const formatIsoDate = (isoDate: string) =>
+  DateTime.fromISO(isoDate).toFormat('ccc dd LLL yyyy h:mm a');
 
 type Props = { events: MeetupEvent[] };
 

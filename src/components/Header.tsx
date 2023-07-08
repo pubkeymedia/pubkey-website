@@ -5,7 +5,7 @@ import React, { PropsWithChildren } from 'react';
 
 export const Header = () => {
   return (
-    <header className="font-redaction italic px-8 max-w-7xl mx-auto tracking-widest w-full">
+    <header className="font-redaction italic px-2 lg:px-8 max-w-7xl mx-auto tracking-widest w-full">
       <nav className="flex justify-between text-xl">
         <HeaderLink href="/home">Home</HeaderLink>
         <HeaderLink href="/shop">Shop</HeaderLink>
