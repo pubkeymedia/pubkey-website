@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
-import cat from '../../public/images/menu/Untitled.png';
+import cat from '../../public/images/menu/cat-double-fisting.png';
 import bg from '../../public/images/menu/kegs-n-eggs-bg.png';
 
 const Menu = () => {
@@ -263,7 +263,12 @@ const Menu = () => {
                 <p>Friday &mdash; Sunday</p>
               </div>
             </div>
-            <Image alt="Drunk cat" placeholder="blur" src={cat} />
+            <Image
+              alt="Drunk cat"
+              className="lg:max-w-3xl lg:mx-auto"
+              placeholder="blur"
+              src={cat}
+            />
           </div>
         </div>
       </div>

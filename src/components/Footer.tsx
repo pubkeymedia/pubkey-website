@@ -21,7 +21,7 @@ export const Footer = () => {
               alt="YouTube logo"
               height={310}
               width={620}
-              src="/images/contact/8bit-yt-logo.png"
+              src="/images/footer/8bit-yt-logo.png"
             />
           </a>
           <a href="https://t.me/+HyDKC9gR7VsyNjc5" target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ export const Footer = () => {
               alt="Telegram logo"
               height={4096}
               width={4096}
-              src="/images/contact/8bit-tg-logo.png"
+              src="/images/footer/8bit-tg-logo.png"
             />
           </a>
           <a href="https://twitter.com/PubKey_NYC" target="_blank" rel="noreferrer">
@@ -37,7 +37,7 @@ export const Footer = () => {
               alt="Twitter logo"
               height={400}
               width={400}
-              src="/images/contact/8bit-twitter-logo.png"
+              src="/images/footer/8bit-twitter-logo.png"
             />
           </a>
           <a href="https://www.instagram.com/pubkey.bar/" target="_blank" rel="noreferrer">
@@ -45,7 +45,7 @@ export const Footer = () => {
               alt="Instagram logo"
               height={260}
               width={260}
-              src="/images/contact/8bit-insta-logo.png"
+              src="/images/footer/8bit-insta-logo.png"
             />
           </a>
           <a href="https://www.instagram.com/pubkey.tv/" target="_blank" rel="noreferrer">
@@ -53,7 +53,7 @@ export const Footer = () => {
               alt="Custom Instagram logo"
               height={514}
               width={612}
-              src="/images/contact/8bit-insta-tv-logo.png"
+              src="/images/footer/8bit-insta-tv-logo.png"
             />
           </a>
         </div>
