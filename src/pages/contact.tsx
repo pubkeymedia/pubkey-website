@@ -37,6 +37,7 @@ const Contact: NextPage = () => {
               Job Inquiries: <a href="mailto:info@port8333.io">info@port8333.io</a>
             </p>
             <a
+              className="text-blue-600 visited:text-indigo-600 underline underline-offset-4"
               href="https://pubkey.tripleseat.com/party_request/30585"
               target="_blank"
               rel="noreferrer"
