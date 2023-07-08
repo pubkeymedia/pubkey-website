@@ -13,7 +13,7 @@ const EventsPage: NextPage<Props> = ({ events }) => {
               className="flex flex-row gap-x-2 md:gap-x-4 text-lg md:text-xl tracking-wider"
               key={event.title}
             >
-              <p>{event.dateTime}</p>
+              <p>{formatIsoDate(event.dateTime)}</p>
               <p>&raquo;</p>
               <a className="text-orange-600" href={event.eventUrl} target="_blank" rel="noreferrer">
                 {event.title}
@@ -31,15 +31,13 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const events = await meetup.getEvents();
 
   return {
-    props: {
-      events: events.map((e) => ({
-        ...e,
-        dateTime: DateTime.fromISO(e.dateTime).toFormat('dd LLL yyyy h:mm a'),
-      })),
-    },
+    props: { events },
     revalidate: 60 * 15, // 15 minutes
   };
 };
+
+const formatIsoDate = (isoDate: string) => DateTime.fromISO(isoDate).toFormat('dd LLL yyyy h:mm a');
+
 type Props = { events: MeetupEvent[] };
 
 export default EventsPage;
