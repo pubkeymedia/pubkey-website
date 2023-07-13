@@ -11,14 +11,7 @@ import { formatIsoDate } from '../lib/strings';
 import { sample } from 'lodash';
 import clsx from 'clsx';
 
-const compScreens = [
-  { textClass: 'text-green-500', src: compScreenImgBlk.src },
-  { textClass: 'text-blue-50', src: compScreenImgBlue.src },
-] as const;
-
-const Home: NextPage<Props> = ({ events }) => {
-  const compScreen = sample(compScreens);
-
+const Home: NextPage<Props> = ({ compScreen, events }) => {
   return (
     <div className="flex flex-col items-center w-full">
       <NextSeo description="All those other cool websites wish they could be as sweet the Pubkey homepage. It tells the story of a friend who loves video poker and dive bars. His luck isn’t very good. Care to try yours?" />
@@ -102,16 +95,24 @@ const Home: NextPage<Props> = ({ events }) => {
   );
 };
 
+const compScreens = [
+  { textClass: 'text-green-500', src: compScreenImgBlk.src },
+  { textClass: 'text-blue-50', src: compScreenImgBlue.src },
+] as const;
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const meetup = new Meetup();
   const events = await meetup.getEvents();
 
+  const compScreen = sample(compScreens);
+
+  if (!compScreen) throw new Error('No comp screen found');
+
   return {
-    props: { events },
+    props: { compScreen, events },
     revalidate: 60 * 15, // 15 minutes
   };
 };
 
-type Props = { events: MeetupEvent[] };
+type Props = { events: MeetupEvent[]; compScreen: (typeof compScreens)[number] };
 
 export default Home;
