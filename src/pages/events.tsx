@@ -1,6 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next';
-import { DateTime } from 'luxon';
 import { type MeetupEvent, Meetup } from '../lib/meetup';
+import { formatIsoDate } from '../lib/strings';
 
 const EventsPage: NextPage<Props> = ({ events }) => {
   return (
@@ -35,9 +35,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     revalidate: 60 * 15, // 15 minutes
   };
 };
-
-const formatIsoDate = (isoDate: string) =>
-  DateTime.fromISO(isoDate).toFormat('ccc dd LLL yyyy h:mm a');
 
 type Props = { events: MeetupEvent[] };
 

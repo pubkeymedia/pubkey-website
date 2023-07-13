@@ -4,6 +4,10 @@
 
 @layer base {
   @font-face {
+    font-family: DOS;
+    src: url('../../public/fonts/ModernDOS8x16.ttf') format('truetype');
+  }
+  @font-face {
     font-family: Mister Pixel;
     src: url('../../public/fonts/MP16OSF.ttf') format('truetype');
   }

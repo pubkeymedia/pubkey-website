@@ -1,4 +1,4 @@
-import Image, { ImageProps } from 'next/image';
+import Image, { type ImageProps } from 'next/image';
 import boilermakerImg from '../../../public/images/homepage/ticker/boilermaker.png';
 import drumstickImg from '../../../public/images/homepage/ticker/drumstick.png';
 import nyHotdogImg from '../../../public/images/homepage/ticker/new-york-hot-dog.png';
