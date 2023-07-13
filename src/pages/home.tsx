@@ -3,12 +3,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Ticker } from '../components/homepage/Ticker';
-import compScreenImg from '../../public/images/homepage/comp-screen.png';
+import compScreenImgBlk from '../../public/images/homepage/compyblk.png';
+import compScreenImgBlue from '../../public/images/homepage/compyblue.png';
 import type { GetStaticProps, NextPage } from 'next';
 import { Meetup, type MeetupEvent } from '../lib/meetup';
 import { formatIsoDate } from '../lib/strings';
+import { sample } from 'lodash';
+import clsx from 'clsx';
+
+const compScreens = [
+  { textClass: 'text-green-500', src: compScreenImgBlk.src },
+  { textClass: 'text-blue-50', src: compScreenImgBlue.src },
+] as const;
 
 const Home: NextPage<Props> = ({ events }) => {
+  const compScreen = sample(compScreens);
+
   return (
     <div className="flex flex-col items-center w-full">
       <NextSeo description="All those other cool websites wish they could be as sweet the Pubkey homepage. It tells the story of a friend who loves video poker and dive bars. His luck isn’t very good. Care to try yours?" />
@@ -32,15 +42,20 @@ const Home: NextPage<Props> = ({ events }) => {
         <Link
           className="min-h-[512px] w-full"
           href="/events"
-          style={{ backgroundImage: `url(${compScreenImg.src})`, backgroundSize: '100% 100%' }}
+          style={{ backgroundImage: `url(${compScreen?.src})`, backgroundSize: '100% 100%' }}
         >
-          <div className="flex flex-col gap-y-2 py-28 px-24">
+          <div
+            className={clsx(
+              'flex flex-col font-dos gap-y-2 py-28 px-24 text-lg',
+              compScreen?.textClass
+            )}
+          >
             {events.map((e) => (
-              <p className="font-dos text-orange-500 text-sm" key={e.title}>
+              <p key={e.title}>
                 {formatIsoDate(e.dateTime)} &raquo; {e.title}
               </p>
             ))}
-            <p className="animate-blink text-sm text-orange-500">_</p>
+            <p className="animate-blink">_</p>
           </div>
         </Link>
         <Image
