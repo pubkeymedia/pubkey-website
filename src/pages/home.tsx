@@ -104,7 +104,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const events = await meetup.getEvents();
 
   const compScreen = sample(compScreens);
-
   if (!compScreen) throw new Error('No comp screen found');
 
   return {
