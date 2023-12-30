@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
@@ -12,13 +12,13 @@
   "dependencies": {
     "@headlessui/react": "^1.7.4",
     "@shopify/shopify-api": "^5.2.0",
-    "clsx": "^1.2.1",
+    "clsx": "^2.1.0",
     "formik": "^2.2.9",
     "graphql": "^16.7.1",
     "graphql-request": "^6.1.0",
     "lodash": "^4.17.21",
     "luxon": "^3.3.0",
-    "next": "^13.4.9",
+    "next": "^14.0.4",
     "next-seo": "^5.14.1",
     "next-sitemap": "^3.1.32",
     "react": "18.2.0",
@@ -35,7 +35,7 @@
     "autoprefixer": "^10.4.14",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.28.0",
-    "eslint-config-next": "^13.0.5",
+    "eslint-config-next": "^14.0.4",
     "postcss": "^8.4.25",
     "tailwindcss": "^3.2.4",
     "typescript": "^5.1.6"
