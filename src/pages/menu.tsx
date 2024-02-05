@@ -98,9 +98,7 @@ const Menu = () => {
                 <FoodName>
                   Fried Chicken<sup>*</sup> &mdash; $15
                 </FoodName>
-                <FoodDescription>
-                  Katsu sauce (contains shellfish), slaw, lemon mayo, thick cut toast
-                </FoodDescription>
+                <FoodDescription>Katsu sauce, slaw, lemon mayo, thick cut toast</FoodDescription>
               </div>
               <div>
                 <FoodName>
@@ -120,15 +118,6 @@ const Menu = () => {
                 <p className="text-sm">
                   Single $14 Double $17 Bacon +$3 Egg<sup>*</sup> +$2
                 </p>
-              </div>
-              <div>
-                <FoodName>
-                  Dirty Burg<sup>*</sup> &mdash; $18
-                </FoodName>
-                <FoodDescription>
-                  ¼ lb. Wagyu, fried mozzerella, shrettuce, hot peppers, pickled red onion, seeded
-                  potato roll
-                </FoodDescription>
               </div>
             </FoodTypeSection>
           </div>
@@ -206,69 +195,6 @@ const Menu = () => {
               <sup>*</sup>Consuming raw or uncooked meats, poultry, seafood, shellfish or eggs may
               increase your risk of food borne illness.
             </p>
-          </div>
-        </div>
-        <div>
-          <div
-            className="bg-no-repeat font p-8 lg:pt-28 text-blue-600 w-full"
-            style={{ backgroundImage: `url(${bg.src})`, backgroundSize: '100% 100%' }}
-          >
-            <h1 className="text-center text-6xl uppercase">KEGS N&apos; EGGS</h1>
-            <div className="flex flex-col mt-16 max-w-3xl mx-auto gap-y-8">
-              <div className="flex flex-col gap-y-4">
-                <h2 className="text-3xl">FOOD</h2>
-                <div>
-                  <KegsNEggsFoodItem
-                    detail="bacon, egg, cheese, spicy ketchup, martin's potato roll double egg +$2"
-                    price={10}
-                    title="BECY"
-                  />
-                  <KegsNEggsFoodItem
-                    detail="bacon, lettuce, tomato, mayo, fried egg, texas toast"
-                    price={11}
-                    title="BLT&E"
-                  />
-                  <KegsNEggsFoodItem
-                    detail="two eggs, peppers, onion, taylor ham, american cheese, spicy ketchup, long roll"
-                    price={14}
-                    title="TAYLOR HAM CHOP"
-                  />
-                  <KegsNEggsFoodItem
-                    detail="texas toast, cinnamon spiced powdered sugar, chocolate-coffee syrup"
-                    price={12}
-                    title="FRENCH TOAST"
-                  />
-                  <KegsNEggsFoodItem
-                    detail="fried all beef dog, waffle fries, guajillo chile aioli"
-                    price={14}
-                    title="SALCHI-WAWA"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col gap-y-4">
-                <h2 className="text-3xl">DRINKS</h2>
-                <div>
-                  <KegsNEggsFoodItem price={9} title="MICHELADA" />
-                  <KegsNEggsFoodItem price={14} title="BLOODY MARY" />
-                  <KegsNEggsFoodItem price={14} title="THAI BASIL DAIQUIRI" />
-                  <KegsNEggsFoodItem
-                    detail="2$ off any keg beer with purchase of food"
-                    price={13}
-                    title="ROSE SPRITZ"
-                  />
-                </div>
-              </div>
-              <div className="text-3xl uppercase">
-                <p>Served 1pm-5pm</p>
-                <p>Friday &mdash; Sunday</p>
-              </div>
-            </div>
-            <Image
-              alt="Drunk cat"
-              className="lg:max-w-3xl lg:mx-auto"
-              placeholder="blur"
-              src={cat}
-            />
           </div>
         </div>
       </div>

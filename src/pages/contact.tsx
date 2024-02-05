@@ -64,36 +64,16 @@ const Contact: NextPage = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-y-8 w-full md:w-64">
+        <div className="flex flex-col gap-y-8 w-full md:w-96">
           <h2 className="uppercase text-xl tracking-wider">Hours</h2>
           <div className="flex flex-col flex-grow font-redaction text-lg italic tracking-widest">
-            <div className="flex justify-between">
-              <p>Monday</p>
+            <div className="flex justify-between gap-x-2">
+              <p>Sun. &mdash; Thurs.</p>
+              <p>3pm&mdash;12am</p>
+            </div>
+            <div className="flex justify-between gap-x-2">
+              <p>Fri. & Sat.</p>
               <p>3pm&mdash;2am</p>
-            </div>
-            <div className="flex justify-between">
-              <p>Tuesday</p>
-              <p>3pm&mdash;2am</p>
-            </div>
-            <div className="flex justify-between">
-              <p>Wednesday</p>
-              <p>3pm&mdash;2am</p>
-            </div>
-            <div className="flex justify-between">
-              <p>Thursday</p>
-              <p>3pm&mdash;4am</p>
-            </div>
-            <div className="flex justify-between">
-              <p>Friday</p>
-              <p>1pm&mdash;4am</p>
-            </div>
-            <div className="flex justify-between">
-              <p>Saturday</p>
-              <p>1pm&mdash;4am</p>
-            </div>
-            <div className="flex justify-between">
-              <p>Sunday</p>
-              <p>1pm&mdash;2am</p>
             </div>
           </div>
         </div>

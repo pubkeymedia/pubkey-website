@@ -33,6 +33,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-const landingPagePaths = ['/', '/try-again'];
+const landingPagePaths = ['/', '/meetups', '/try-again'];
 
 export default MyApp;
