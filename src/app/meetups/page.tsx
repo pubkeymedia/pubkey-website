@@ -19,4 +19,6 @@ const Meetups = async () => {
   );
 };
 
+export const revalidate = 900; // refresh data every 15 minutes
+
 export default Meetups;
