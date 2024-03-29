@@ -32,12 +32,20 @@ export const Footer = () => {
               src="/images/footer/8bit-tg-logo.png"
             />
           </a>
-          <a href="https://twitter.com/PubKey_NYC" target="_blank" rel="noreferrer">
+          <a href="https://x.com/PubKey_NYC" target="_blank" rel="noreferrer">
             <Image
-              alt="Twitter logo"
+              alt="Xitter logo"
               height={400}
               width={400}
-              src="/images/footer/8bit-twitter-logo.png"
+              src="/images/footer/8bit-xitter-logo.png"
+            />
+          </a>
+          <a href="https://primal.net/p/npub1key55ax33gkl50uqemvl4khrtqrhzm7wzpc7fhseutt5ddkcwcrqgxlt3h" target="_blank" rel="noreferrer">
+            <Image
+              alt="Nostr logo"
+              height={400}
+              width={400}
+              src="/images/footer/8bit-nostr-logo.png"
             />
           </a>
           <a href="https://www.instagram.com/pubkey.bar/" target="_blank" rel="noreferrer">
