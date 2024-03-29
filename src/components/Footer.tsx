@@ -12,55 +12,55 @@ export const Footer = () => {
         </div>
         <div className="grid grid-rows-1 grid-cols-6 gap-x-4 items-center self-center max-w-sm lg:max-w-lg">
           <a
-            className="col-span-2"
+            className="col-span-1"
             href="https://www.youtube.com/@Pubkeymediahouse"
             target="_blank"
             rel="noreferrer"
           >
             <Image
               alt="YouTube logo"
-              height={400}
-              width={400}
+              height={72}
+              width={72}
               src="/images/footer/8bit-youtube-logo.png"
             />
           </a>
           <a href="https://t.me/+HyDKC9gR7VsyNjc5" target="_blank" rel="noreferrer">
             <Image
               alt="Telegram logo"
-              height={4096}
-              width={4096}
+              height={72}
+              width={72}
               src="/images/footer/8bit-tg-logo.png"
             />
           </a>
           <a href="https://x.com/PubKey_NYC" target="_blank" rel="noreferrer">
             <Image
               alt="Xitter logo"
-              height={400}
-              width={400}
+              height={72}
+              width={72}
               src="/images/footer/8bit-xitter-logo.png"
             />
           </a>
           <a href="https://primal.net/p/npub1key55ax33gkl50uqemvl4khrtqrhzm7wzpc7fhseutt5ddkcwcrqgxlt3h" target="_blank" rel="noreferrer">
             <Image
               alt="Nostr logo"
-              height={400}
-              width={400}
+              height={72}
+              width={72}
               src="/images/footer/8bit-nostr-logo.png"
             />
           </a>
           <a href="https://www.instagram.com/pubkey.bar/" target="_blank" rel="noreferrer">
             <Image
               alt="Instagram logo"
-              height={260}
-              width={260}
+              height={72}
+              width={72}
               src="/images/footer/8bit-insta-logo.png"
             />
           </a>
           <a href="https://www.instagram.com/pubkey.tv/" target="_blank" rel="noreferrer">
             <Image
               alt="Custom Instagram logo"
-              height={514}
-              width={612}
+              height={72}
+              width={72}
               src="/images/footer/8bit-insta-tv-logo.png"
             />
           </a>
