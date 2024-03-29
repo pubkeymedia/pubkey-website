@@ -53,7 +53,7 @@ export const Footer = () => {
               alt="Instagram logo"
               height={72}
               width={72}
-              src="/images/footer/8bit-insta-logo.png"
+              src="/images/footer/8bit-instagram-logo.png"
             />
           </a>
           <a href="https://www.tiktok.com/@pubkey.bar" target="_blank" rel="noreferrer">
