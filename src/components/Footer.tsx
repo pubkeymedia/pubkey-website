@@ -29,7 +29,7 @@ export const Footer = () => {
               alt="Telegram logo"
               height={72}
               width={72}
-              src="/images/footer/8bit-tg-logo.png"
+              src="/images/footer/8bit-telegram-logo.png"
             />
           </a>
           <a href="https://x.com/PubKey_NYC" target="_blank" rel="noreferrer">
