@@ -19,9 +19,9 @@ export const Footer = () => {
           >
             <Image
               alt="YouTube logo"
-              height={310}
-              width={620}
-              src="/images/footer/8bit-yt-logo.png"
+              height={400}
+              width={400}
+              src="/images/footer/8bit-youtube-logo.png"
             />
           </a>
           <a href="https://t.me/+HyDKC9gR7VsyNjc5" target="_blank" rel="noreferrer">
