@@ -1,7 +1,10 @@
-return  (
+import React from 'react';
 
-  <h1>Whole</h1>
+  return (
 
- );
+<h1>Whole</h1>
+
+  );
+
 
 export default Whole;
