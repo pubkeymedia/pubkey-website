@@ -1,23 +1,34 @@
 import React from 'react';
 
 const Whole: React.FC = () => {
-    return (
+  return (
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="mobile-web-app-capable" content="yes" />
         <title>WHOLE: A dating experience exclusively for those who own one whole bitcoin</title>
         <style>{`
-          body {
-            background-color: black;
-            background: url('/images/whole/whole_bg.jpg') no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+          html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
           }
-
+          .full-screen-bg {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://pubkey.bar/images/whole/whole_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+          }
+          .content {
+            text-align: center;
+            color: white;
+            font-size: 24px;
+          }
           .logo {
             position: absolute;
             top: 30%;
@@ -26,14 +37,12 @@ const Whole: React.FC = () => {
             width: 395px;
             height: 106px;
           }
-
           .button-container {
             position: absolute;
             top: 65%;
             left: 50%;
             transform: translate(-50%, -50%);
           }
-
           button {
             font-family: Arial, sans-serif;
             font-style: bold;
@@ -50,9 +59,13 @@ const Whole: React.FC = () => {
         `}</style>
       </head>
       <body>
-        <div className="logo"><img alt="Logo" src="/images/whole/whole_logo.png" /></div>
-        <div className="button-container">
-          <a href="https://www.youtube.com/watch?v=3cJwVT1RyWE"><button>GET WHOLE</button></a>
+        <div className="full-screen-bg">
+          <div className="content">
+            <div className="logo"><img alt="Logo" src="https://pubkey.bar/images/whole/whole_logo.png" /></div>
+            <div className="button-container">
+              <a href="https://www.youtube.com/watch?v=3cJwVT1RyWE"><button>GET WHOLE</button></a>
+            </div>
+          </div>
         </div>
       </body>
     </html>
