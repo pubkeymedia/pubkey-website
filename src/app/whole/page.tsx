@@ -1,16 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Whole = () => {
   return (
-    <div className="flex flex-col items-center">
-      <Image
-        className="w-full"
-        src="/images/whole/whole_bg.jpg"
-      />
-      <div className="mt-4">
+    <div className="flex flex-col items-center bg-cover bg-center h-screen" style={{backgroundImage: `url(/images/whole/whole_bg.jpg)`}}>
+      <div className="mt-auto mb-auto">
         <a
-          className="hover:text-gray-700 mr-4"
+          className="hover:text-white-700 mr-4"
           href="https://www.youtube.com/watch?v=3cJwVT1RyWE"
           target="_blank"
           rel="noreferrer"
