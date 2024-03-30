@@ -3,6 +3,9 @@ import React from 'react';
 const Whole: React.FC = () => {
   return (
     <div style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
       width: '100vw',
       height: '100vh',
       backgroundImage: `url('/images/whole/whole_bg.jpg')`,
@@ -11,7 +14,6 @@ const Whole: React.FC = () => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      position: 'relative',
     }}>
       <div className="content" style={{
         textAlign: 'center',
