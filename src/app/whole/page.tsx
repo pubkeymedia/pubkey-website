@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Whole: React.FC = () => {
-  return (
+    return (
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
@@ -15,7 +15,6 @@ const Whole: React.FC = () => {
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            background-size: cover;
             background-size: cover;
           }
 
