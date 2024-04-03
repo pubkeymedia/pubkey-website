@@ -54,18 +54,6 @@ const Menu = () => {
                   Allen Bro&apos;s Jumbo, wagyu chili, dijon, raw onions, potato bun (want cheese?)
                 </FoodDescription>
               </div>
-              <div>
-                <FoodName>Cheese Dog &mdash; $7</FoodName>
-                <FoodDescription>
-                  Vienna Beef, hot peppers, onion, cheese sauce, poppy seed bun
-                </FoodDescription>
-              </div>
-              <div>
-                <FoodName>New York Style &mdash; $7</FoodName>
-                <FoodDescription>
-                  Hebrew National, spicy brown mustard, beer braised sauerkraut, potato bun
-                </FoodDescription>
-              </div>
             </FoodTypeSection>
           </div>
 
