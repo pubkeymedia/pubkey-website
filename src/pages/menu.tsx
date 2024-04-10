@@ -76,14 +76,6 @@ const Menu = () => {
               </div>
               <div>
                 <FoodName>
-                  Chop Cheese<sup>*</sup> &mdash; $14
-                </FoodName>
-                <FoodDescription>
-                  Wagyu, pepper, onions, American cheese, bodega sauce, hero roll
-                </FoodDescription>
-              </div>
-              <div>
-                <FoodName>
                   Fried Chicken<sup>*</sup> &mdash; $15
                 </FoodName>
                 <FoodDescription>Katsu sauce, slaw, lemon mayo, thick cut toast</FoodDescription>
