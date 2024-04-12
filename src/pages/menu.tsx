@@ -85,9 +85,9 @@ const Menu = () => {
               </div>
               <div>
                 <FoodName>
-                  Mom's Grilled Cheese &mdash; $12
+                  Mom&apos;s Grilled Cheese &mdash; $12
                 </FoodName>
-                <FoodDescription>SESAME POTATO BUN / 'MERICAN CHEESE / PICKLE</FoodDescription>
+                <FoodDescription>SESAME POTATO BUN / &apos;MERICAN CHEESE / PICKLE</FoodDescription>
               </div>
             </FoodTypeSection>
           </div>
