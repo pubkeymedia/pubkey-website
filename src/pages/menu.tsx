@@ -28,30 +28,28 @@ const Menu = () => {
             />
             <FoodTypeSection>
               <div>
-                <FoodType>Hot Dogs</FoodType>
-                <p className="font-redaction">Served with potato chips</p>
+                <FoodType>DOGGOS</FoodType>
+                <p className="font-redaction">Served with Ruffles potato chips</p>
                 <p className="font-redaction">All hot dogs are made with 100% beef</p>
-              </div>
-              <div>
-                <FoodName>The Dirty Dog &mdash; $8</FoodName>
-                <FoodDescription>
-                  Allen Bro&apos;s Jumbo, purple derp, whole grain mustard, fried shallot, poppy
-                  seed bun
-                </FoodDescription>
               </div>
               <div>
                 <FoodName>Chicago Classic &mdash; $8</FoodName>
                 <FoodDescription>
-                  Vienna Beef, yellow mustard, neon relish, tomato, pickle, onions, sport peppers,
-                  celery salt, poppy seed bun
+                  ONION / TOMATO / SPORT PEPPER / YELLOW MUSTARD
+                </FoodDescription>
+              </div>
+              <div>
+                <FoodName>Dirty Dog &mdash; $9</FoodName>
+                <FoodDescription>
+                  WAGYU CHILI / SLAW / FRIED SHALLOT / SE&#209;OR LECHUGA HOT SAUCE
                 </FoodDescription>
               </div>
               <div>
                 <FoodName>
-                  Chili Ripper<sup>*</sup> &mdash; $8
+                  Jersey Ripper &mdash; $8
                 </FoodName>
                 <FoodDescription>
-                  Allen Bro&apos;s Jumbo, wagyu chili, dijon, raw onions, potato bun (want cheese?)
+                  DEEP FRIED FRANK / BURNT PEPPER RELISH / DELI MUSTARD
                 </FoodDescription>
               </div>
             </FoodTypeSection>
@@ -67,37 +65,29 @@ const Menu = () => {
             />
             <FoodTypeSection>
               <div>
-                <FoodType>Sandwiches</FoodType>
+                <FoodType>SAMMIES</FoodType>
                 <p className="font-redaction">All sandwiches served with pickle</p>
               </div>
               <div>
-                <FoodName>Grilled Cheese &mdash; $11</FoodName>
-                <FoodDescription>American, cheddar, tomato, basil, thick cut toast</FoodDescription>
-              </div>
-              <div>
                 <FoodName>
-                  Fried Chicken<sup>*</sup> &mdash; $15
-                </FoodName>
-                <FoodDescription>Katsu sauce, slaw, lemon mayo, thick cut toast</FoodDescription>
-              </div>
-              <div>
-                <FoodName>
-                  Chicky Chicky Parm<sup>*</sup> &mdash; $15
+                  Smash-Burger
                 </FoodName>
                 <FoodDescription>
-                  Breaded chicken cutlet, fried mozzerella, arrabiata, seeded potato bun
-                </FoodDescription>
-              </div>
-              <div>
-                <FoodName>
-                  Smash Burger<sup>*</sup>
-                </FoodName>
-                <FoodDescription>
-                  ¼ lb. Wagyu, cheese, sauted onion, pickles, pub sauce, seeded potato roll
+                  PUB SAUCE / LETTUCE / ONION / TOMATO / CHEESE
                 </FoodDescription>
                 <p className="text-sm">
-                  Single $14 Double $17 Bacon +$3 Egg<sup>*</sup> +$2
+                  Single $16 / Double $19 / Triple $22 / +Bacon 3 / +Egg 2
                 </p>
+              </div>
+              <div>
+                <FoodName>Buffalo Chicky-Chicky &mdash; $16</FoodName>
+                <FoodDescription>PICKLE-BRINED BUTTERMILK BREAST / SASSY SLAW / PICKLE</FoodDescription>
+              </div>
+              <div>
+                <FoodName>
+                  Mom's Grilled Cheese &mdash; $12
+                </FoodName>
+                <FoodDescription>SESAME POTATO BUN / 'MERICAN CHEESE / PICKLE</FoodDescription>
               </div>
             </FoodTypeSection>
           </div>
@@ -114,29 +104,19 @@ const Menu = () => {
               <FoodTypeSection className="text-center">
                 <div>
                   <FoodType>
-                    Hot Wings<sup>*</sup>
+                    WINGS
                   </FoodType>
                   <div className="font-redaction tracking-wide">
                     <p>Served with celery, blue cheese or ranch</p>
-                    <p>6 for $11 ~-~ 12 for $21</p>
+                    <p><span className="font-bold">6 pc $12 / 12 pc $22</span></p>
                   </div>
                 </div>
                 <div className="font-redaction tracking-wide">
                   <p>
-                    <span className="font-bold">Buffalo</span>
-                    <span> (wet)</span>
+                    BUFFALO or RED BBQ DRY
                   </p>
                   <p>
-                    <span className="font-bold">Sriracha Honey</span>
-                    <span> (wet)</span>
-                  </p>
-                  <p>
-                    <span className="font-bold">Curry</span>
-                    <span> (dry)</span>
-                  </p>
-                  <p>
-                    <span className="font-bold">Red BBQ</span>
-                    <span> (dry)</span>
+                    RANCH or BLEU
                   </p>
                 </div>
               </FoodTypeSection>
@@ -150,29 +130,29 @@ const Menu = () => {
                 width={269}
               />
               <FoodTypeSection className="text-center">
-                <FoodType>Snacks</FoodType>
+                <FoodType>BITES</FoodType>
                 <div>
-                  <FoodName>Fried Mozzerella &mdash; $12</FoodName>
-                  <FoodDescription>Arrabiata sauce</FoodDescription>
+                  <FoodName>Fried Mozz &mdash; $12</FoodName>
+                  <FoodDescription>HERB CRUMBZ / ARRABIATA</FoodDescription>
                 </div>
                 <div>
-                  <FoodName>Wagyu Chili &mdash; $11</FoodName>
-                  <FoodDescription>Diced onion, lime crema, fried shallot</FoodDescription>
+                  <FoodName>Jerk Cauliflower &mdash; $14</FoodName>
+                  <FoodDescription>BEER BATTERED / SWEET CHILI DUNKER</FoodDescription>
                 </div>
                 <div>
-                  <FoodName>Chicharrones &mdash; $8</FoodName>
-                  <FoodDescription>Pimenton</FoodDescription>
+                  <FoodName>Waffle Fries &mdash; $10</FoodName>
+                  <FoodDescription>GREEN GOOP</FoodDescription>
                 </div>
                 <div>
-                  <FoodName>Waffle Fries &mdash; $9</FoodName>
+                  <FoodName>PubKey Nachos &mdash; $14</FoodName>
                   <FoodDescription>
-                    Cheese dip +$3 Wagyu Chili +$4 Key&apos;d up +$5
+                  PICKLED ONION & JALAPE&#209;O / +WAGYU CHILI 3
                   </FoodDescription>
                 </div>
               </FoodTypeSection>
             </div>
             <p className="max-w-md text-xs tracking-wide">
-              <sup>*</sup>Consuming raw or uncooked meats, poultry, seafood, shellfish or eggs may
+              Consuming raw or uncooked meats, poultry, seafood, shellfish or eggs may
               increase your risk of food borne illness.
             </p>
           </div>
