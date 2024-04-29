@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="flex flex-col md:flex-row gap-y-6 gap-x-8 md:gap-x-16 md:justify-between max-w-6xl mx-auto">
         <div className="flex flex-col items-center md:items-start md:flex-shrink">
           <Image alt="Pubkey logo" height={100} width={200} src="/images/logo.svg" />
-          <p>&copy; {new Date().getFullYear()}</p>
+          <p>&copy; {new Date().getFullYear()} Est. 735075</p>
           <p>The family you choose!</p>
         </div>
         <div className="grid grid-rows-1 grid-cols-6 gap-x-4 items-center self-center max-w-sm lg:max-w-lg">
