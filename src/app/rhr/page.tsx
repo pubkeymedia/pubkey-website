@@ -50,8 +50,8 @@ const YourPageWithPriceAndName: React.FC = () => {
         imageUrl2="/images/rhr/hotstyle-vip.jpg"
         linkUrl1="https://pay.zaprite.com/pl_Ss72YiBcvL"
         linkUrl2="https://pay.zaprite.com/pl_fDG1woIQ8S"
-        itemName1="GA HOT STYLE"
-        itemName2="VIP HOT STYLE"
+        itemName1="GA HOT STYLE - JULY 25TH"
+        itemName2="VIP HOT STYLE - JULY 25TH"
       />
     </div>
   );
