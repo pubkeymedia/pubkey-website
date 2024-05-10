@@ -8,14 +8,14 @@ const SideBySideImagesWithPrice: React.FC<{ imageUrl1: string, imageUrl2: string
           <img src={imageUrl1} alt="Image 1" style={{ width: '100%' }} />
         </a>
         <div style={{ color: 'white', marginTop: '5px', fontSize: '14px', fontFamily: 'sans-serif', textAlign: 'center' }}>{itemName1}</div>
-        <div style={{ color: 'white', marginTop: '5px', fontSize: '24px', fontFamily: 'sans-serif' }}>$50</div>
+        <div style={{ color: 'white', marginTop: '5px', fontSize: '24px', fontFamily: 'sans-serif' }}><a href={linkUrl1} target="_blank" rel="noopener noreferrer">$50</a></div>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px 5px' }}>
         <a href={linkUrl2} target="_blank" rel="noopener noreferrer">
           <img src={imageUrl2} alt="Image 2" style={{ width: '100%' }} />
         </a>
         <div style={{ color: 'white', marginTop: '5px', fontSize: '14px', fontFamily: 'sans-serif', textAlign: 'center' }}>{itemName2}</div>
-        <div style={{ color: 'white', marginTop: '5px', fontSize: '24px', fontFamily: 'sans-serif' }}>$121</div>
+        <div style={{ color: 'white', marginTop: '5px', fontSize: '24px', fontFamily: 'sans-serif' }}><a href={linkUrl2} target="_blank" rel="noopener noreferrer">$121</a></div>
       </div>
     </div>
   );
@@ -43,6 +43,14 @@ const YourPageWithPriceAndName: React.FC = () => {
               margin: 0px 0;
             }
           }
+          a {
+            color: white; /* Set text color to white */
+            text-decoration: none; /* Remove underline */
+        }
+        
+        a:hover {
+            color: orange; /* Change text color to orange on hover */
+        }
         `}
       </style>
       <SideBySideImagesWithPrice 
