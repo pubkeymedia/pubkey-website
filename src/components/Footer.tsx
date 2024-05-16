@@ -10,7 +10,7 @@ export const Footer = () => {
           <p>&copy; {new Date().getFullYear()} | Est. 735075</p>
           <p>The family you choose!</p>
         </div>
-        <div className="grid grid-rows-1 grid-cols-6 gap-x-4 items-center self-center max-w-sm lg:max-w-lg">
+        <div className="grid grid-rows-1 grid-cols-7 gap-x-4 items-center self-center max-w-sm lg:max-w-lg">
           <a
             className="col-span-1"
             href="https://www.youtube.com/@Pubkeymediahouse"
@@ -19,49 +19,57 @@ export const Footer = () => {
           >
             <Image
               alt="YouTube logo"
-              height={72}
-              width={72}
+              height={64}
+              width={64}
               src="/images/footer/8bit-youtube-logo.png"
             />
           </a>
           <a href="https://t.me/+HyDKC9gR7VsyNjc5" target="_blank" rel="noreferrer">
             <Image
               alt="Telegram logo"
-              height={72}
-              width={72}
+              height={64}
+              width={64}
               src="/images/footer/8bit-telegram-logo.png"
             />
           </a>
           <a href="https://x.com/PubKey_NYC" target="_blank" rel="noreferrer">
             <Image
               alt="Xitter logo"
-              height={72}
-              width={72}
+              height={64}
+              width={64}
               src="/images/footer/8bit-xitter-logo.png"
             />
           </a>
           <a href="https://primal.net/p/npub1key55ax33gkl50uqemvl4khrtqrhzm7wzpc7fhseutt5ddkcwcrqgxlt3h" target="_blank" rel="noreferrer">
             <Image
               alt="Nostr logo"
-              height={72}
-              width={72}
+              height={64}
+              width={64}
               src="/images/footer/8bit-nostr-logo.png"
             />
           </a>
           <a href="https://www.instagram.com/pubkey.bar/" target="_blank" rel="noreferrer">
             <Image
               alt="Instagram logo"
-              height={72}
-              width={72}
+              height={64}
+              width={64}
               src="/images/footer/8bit-instagram-logo.png"
             />
           </a>
           <a href="https://www.tiktok.com/@pubkey.bar" target="_blank" rel="noreferrer">
             <Image
               alt="TikTok logo"
-              height={72}
-              width={72}
+              height={64}
+              width={64}
               src="/images/footer/8bit-tiktok-logo.png"
+            />
+          </a>
+          <a href="https://gemini.sjv.io/pubkey" target="_blank" rel="noreferrer">
+            <Image
+              alt="Gemini logo"
+              height={64}
+              width={64}
+              src="/images/footer/8bit-gemini-logo.png"
             />
           </a>
         </div>
