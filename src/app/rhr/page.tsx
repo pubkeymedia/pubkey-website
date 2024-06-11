@@ -11,11 +11,9 @@ const SideBySideImagesWithPrice: React.FC<{ imageUrl1: string, imageUrl2: string
         <div style={{ color: 'white', marginTop: '5px', fontSize: '24px', fontFamily: 'sans-serif' }}><a href={linkUrl1} target="_blank" rel="noopener noreferrer">$50</a></div>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px 5px' }}>
-        <a href={linkUrl2} target="_blank" rel="noopener noreferrer">
-          <img src={imageUrl2} alt="Image 2" style={{ width: '100%' }} />
-        </a>
+          <img src={imageUrl2} alt="Image 2" style={{ width: '100%' }} />      
         <div style={{ color: 'white', marginTop: '5px', fontSize: '14px', fontFamily: 'sans-serif', textAlign: 'center' }}>{itemName2}</div>
-        <div style={{ color: 'white', marginTop: '5px', fontSize: '24px', fontFamily: 'sans-serif' }}><a href={linkUrl2} target="_blank" rel="noopener noreferrer">$121</a></div>
+        <div style={{ color: 'white', marginTop: '5px', fontSize: '24px', fontFamily: 'sans-serif' }}>SODL OUT!</div>
       </div>
     </div>
   );
@@ -55,9 +53,9 @@ const YourPageWithPriceAndName: React.FC = () => {
       </style>
       <SideBySideImagesWithPrice 
         imageUrl1="/images/rhr/hotstyle-ga.jpg"
-        imageUrl2="/images/rhr/hotstyle-vip.jpg"
+        imageUrl2="/images/rhr/hotstyle-vip-sodl.jpg"
         linkUrl1="https://pay.zaprite.com/pl_Ss72YiBcvL"
-        linkUrl2="https://pay.zaprite.com/pl_fDG1woIQ8S"
+        linkUrl2="#"
         itemName1="GA HOT STYLE - JULY 25TH"
         itemName2="VIP HOT STYLE - JULY 25TH"
       />
