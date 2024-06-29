@@ -2,18 +2,37 @@ import React from 'react';
 
 const SideBySideImagesWithPrice: React.FC<{ imageUrl1: string, imageUrl2: string, linkUrl1: string, linkUrl2: string, itemName1: string, itemName2: string }> = ({ imageUrl1, imageUrl2, linkUrl1, linkUrl2, itemName1, itemName2 }) => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: 'black' }}>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '0 5px' }}>
+    <div className="side-by-side-container">
+      <div className="item-container">
         <a href={linkUrl1} target="_blank" rel="noopener noreferrer">
-          <img src={imageUrl1} alt="Image 1" style={{ width: '100%' }} />
+          <img src={imageUrl1} alt="Image 1" className="item-image" />
         </a>
-        <div style={{ color: 'white', marginTop: '5px', fontSize: '14px', fontFamily: 'sans-serif', textAlign: 'center' }}>{itemName1}</div>
-        <div style={{ color: 'white', marginTop: '5px', fontSize: '24px', fontFamily: 'sans-serif' }}><a href={linkUrl1} target="_blank" rel="noopener noreferrer">$50</a></div>
+        <div className="item-name">{itemName1}</div>
+        <div className="item-price"><a href={linkUrl1} target="_blank" rel="noopener noreferrer">$50</a></div>
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px 5px' }}>
-          <img src={imageUrl2} alt="Image 2" style={{ width: '100%' }} />      
-        <div style={{ color: 'white', marginTop: '5px', fontSize: '14px', fontFamily: 'sans-serif', textAlign: 'center' }}>{itemName2}</div>
-        <div style={{ color: 'white', marginTop: '5px', fontSize: '24px', fontFamily: 'sans-serif' }}>SODL OUT!</div>
+      <div className="item-container">
+          <img src={imageUrl2} alt="Image 2" className="item-image" />
+        <div className="item-name">{itemName2}</div>
+        <div className="item-price">SODL OUT!</div>
+      </div>
+    </div>
+  );
+}
+
+const ImageGrid: React.FC = () => {
+  return (
+    <div className="image-grid">
+      <div className="sponsors-text">SPONSORS</div>
+      <div className="logos-container">
+        <div className="logo">
+          <img src="/images/rhr/hrf_logo.jpg" alt="Human Rights Foundation" />
+        </div>
+        <div className="logos">
+        </div>
+      </div>
+      <div className="contact-text">
+        <p>Interested in becoming a sponsor?</p>
+        <p>Get in touch: <a href="mailto:events@port8333.io?subject=Hot Style Takeover Sponsorship">events@port8333.io</a></p>
       </div>
     </div>
   );
@@ -21,34 +40,126 @@ const SideBySideImagesWithPrice: React.FC<{ imageUrl1: string, imageUrl2: string
 
 const YourPageWithPriceAndName: React.FC = () => {
   return (
-    <div>
+    <div className="page-container">
       <style>
         {`
           body {
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Optional: This prevents horizontal scrolling if the content overflows horizontally */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            background-color: black; /* Ensure the background is black */
+          }
+
+          .side-by-side-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 auto;
+            background-color: black;
+            padding-bottom: 20px; /* Add padding bottom for spacing */
+          }
+
+          .item-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            margin: 0 5px;
+          }
+
+          .item-image {
+            width: 100%;
+          }
+
+          .item-name, .item-price {
+            color: white;
+            margin-top: 5px;
+            font-family: sans-serif;
+            text-align: center;
+          }
+
+          .item-name {
+            font-size: 14px;
+          }
+
+          .item-price {
+            font-size: 24px;
+          }
+
+          .image-grid {
+            background-color: black;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+          }
+
+          .sponsors-text {
+            font-family: sans-serif;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+
+          .logos-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+          }
+
+          .logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+          }
+
+          .grid-image {
+            width: auto;
+            height: auto;
+            margin: 5px;
+          }
+
+          .contact-text {
+            font-family: sans-serif;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 10px;
           }
 
           @media screen and (max-width: 768px) {
-            /* Stack images vertically on narrow screens */
-            div {
+            .side-by-side-container {
               flex-direction: column;
             }
 
-            div:nth-child(1),
-            div:nth-child(2) {
-              margin: 0px 0;
+            .grid-image {
+              width: 48%; /* Make the images take up almost half the width each */
+              margin: 1%; /* Add a small margin to keep them apart */
             }
           }
+
+          @media screen and (min-width: 769px) {
+            .grid-image {
+              width: 48%; /* Make the images take up almost half the width each */
+              /* width: 23%;  Make the images take up about a quarter of the width each */
+              margin: 1%; /* Add a small margin to keep them apart */
+            }
+          }
+
           a {
             color: white; /* Set text color to white */
             text-decoration: none; /* Remove underline */
-        }
-        
-        a:hover {
+          }
+          
+          a:hover {
             color: orange; /* Change text color to orange on hover */
-        }
+          }
         `}
       </style>
       <SideBySideImagesWithPrice 
@@ -59,6 +170,7 @@ const YourPageWithPriceAndName: React.FC = () => {
         itemName1="GA HOT STYLE - JULY 25TH"
         itemName2="VIP HOT STYLE - JULY 25TH"
       />
+      <ImageGrid />
     </div>
   );
 }
