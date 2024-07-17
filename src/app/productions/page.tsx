@@ -1,5 +1,3 @@
-// ProductionsPage.tsx
-
 import React from 'react';
 
 const ProductionsPage: React.FC = () => {
