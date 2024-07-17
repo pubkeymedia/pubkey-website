@@ -75,7 +75,7 @@ const SignupPage: React.FC = () => {
                 background: #000;
                 clear: left;
                 font: 14px Helvetica, Arial, sans-serif;
-                width: 600px;
+                width: 400px;
                 color: #fff;
               }
               .referral_badge {
