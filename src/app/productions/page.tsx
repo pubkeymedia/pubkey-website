@@ -44,7 +44,7 @@ const ProductionsPage: React.FC = () => {
         }
       `}</style>
       <div id="page-content">
-        <img src="/images/productions/pubkey_logo_shadow.png" alt="PubKey Logo" />
+        <img src="/images/productions/pubkey_shrine.gif" alt="PubKey Shrine" />
         <div style={{ marginBottom: '20px' }}>
           <a href="mailto:events@port8333.io">events@port8333.io</a>
         </div>
