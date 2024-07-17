@@ -1,57 +1,43 @@
-// ProductionsPage.tsx
-
 import React from 'react';
-import Head from 'next/head';
 
-const ProductionsPage: React.FC = () => {
+const Productions: React.FC = () => {
   return (
-    <>
-      <Head>
-        <title>Productions</title>
-      </Head>
-      <style jsx global>{`
-        html, body {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          width: 100%;
-          background-color: #000;
-          color: #fff;
-          font-family: 'Helvetica', Arial, sans-serif;
-          background-image: url('/images/productions/pubkey_shrine_bg.gif');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        #page-content {
-          text-align: center;
-        }
-
-        img {
-          width: 100%;
-          max-width: 600px;
-          margin-bottom: 20px;
-        }
-
-        a {
-          color: orange;
-          font-size: 20px;
-          font-weight: bold;
-          text-decoration: none;
-          display: block;
-          margin-top: 20px;
-        }
-      `}</style>
-      <div id="page-content">
-        <img src="/images/productions/pubkey_logo_shadow.png" alt="PubKey Logo" />
-        <a href="mailto:events@port8333.io">events@port8333.io</a>
+    <div style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100vw',
+      height: '100vh',
+      backgroundImage: `url('/images/productions/pubkey_shrine_bg.gif')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
+      <div className="content" style={{
+        textAlign: 'center',
+        color: 'white',
+        fontSize: '24px',
+      }}>
+        <div className="logo" style={{
+          position: 'absolute',
+          top: '30%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: '600px',
+          height: '338px',
+        }}>
+          <img alt="Logo" src="/images/productions/pubkey_logo_shadow.png" />
+        </div>
+        <div>
+          <h2 style={{ fontFamily: 'Arial, sans-serif' }}>
+            <a href="mailto:events@port8333.io" style={{ color: 'orange', textDecoration: 'none' }}>events@port8333.io</a>
+          </h2>
+        </div>
       </div>
-    </>
+    </div>
   );
-};
+}
 
-export default ProductionsPage;
+export default Productions;
