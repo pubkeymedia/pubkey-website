@@ -13,7 +13,21 @@ const ProductionsPage: React.FC = () => {
           width: 100%;
           background-color: #000;
           color: #fff;
-          font-family: 'Helvetica', Arial, sans-serif; /* Ensure each font family name is separate in quotes */
+          font-family: 'Helvetica', Arial, sans-serif;
+          background-image: url('/images/productions/pubkey_shrine_bg.gif');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        #page-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          padding: 20px;
+          box-sizing: border-box;
         }
 
         img {
@@ -29,12 +43,10 @@ const ProductionsPage: React.FC = () => {
           text-decoration: none;
         }
       `}</style>
-      <div style={{ minHeight: '100vh', backgroundColor: '#000', color: '#fff', fontFamily: 'Helvetica, Arial, sans-serif', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: 0 }}>
-        <div style={{ maxWidth: '600px', width: '100%', padding: '20px', boxSizing: 'border-box', textAlign: 'center' }}>
-          <img src="/images/productions/pubkey_shrine.gif" alt="PubKey Shrine" />
-          <div style={{ marginBottom: '20px' }}>
-            <a href="mailto:events@port8333.io">events@port8333.io</a>
-          </div>
+      <div id="page-content">
+        <img src="/images/productions/pubkey_logo_shadow.png" alt="PubKey Logo" />
+        <div style={{ marginBottom: '20px' }}>
+          <a href="mailto:events@port8333.io">events@port8333.io</a>
         </div>
       </div>
     </>
