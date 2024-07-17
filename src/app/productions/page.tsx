@@ -1,8 +1,14 @@
+// ProductionsPage.tsx
+
 import React from 'react';
+import Head from 'next/head';
 
 const ProductionsPage: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Productions</title>
+      </Head>
       <style jsx global>{`
         html, body {
           margin: 0;
@@ -16,16 +22,13 @@ const ProductionsPage: React.FC = () => {
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         #page-content {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          min-height: 100vh;
-          padding: 20px;
-          box-sizing: border-box;
+          text-align: center;
         }
 
         img {
@@ -39,13 +42,13 @@ const ProductionsPage: React.FC = () => {
           font-size: 20px;
           font-weight: bold;
           text-decoration: none;
+          display: block;
+          margin-top: 20px;
         }
       `}</style>
       <div id="page-content">
         <img src="/images/productions/pubkey_logo_shadow.png" alt="PubKey Logo" />
-        <div style={{ marginBottom: '20px' }}>
-          <a href="mailto:events@port8333.io">events@port8333.io</a>
-        </div>
+        <a href="mailto:events@port8333.io">events@port8333.io</a>
       </div>
     </>
   );
