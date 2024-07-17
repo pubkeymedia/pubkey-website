@@ -8,6 +8,7 @@ const Productions: React.FC = () => {
       left: 0,
       width: '100vw',
       height: '100vh',
+      backgroundColor: '#000',  // Setting the page background color to black
       backgroundImage: `url('/images/productions/pubkey_shrine_bg.gif')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
