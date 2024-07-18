@@ -28,6 +28,8 @@ const ImageGrid: React.FC = () => {
           <img src="/images/rhr/hrf_logo.jpg" alt="Human Rights Foundation" />
         </div>
         <div className="logos">
+        <img src="/images/rhr/strike_logo.jpg" alt="Strike" />
+        <img src="/images/rhr/zeus_logo.jpg" alt="Zeus" />
         </div>
       </div>
       <div className="contact-text">
@@ -113,10 +115,10 @@ const YourPageWithPriceAndName: React.FC = () => {
             margin-bottom: 10px;
           }
 
-          .logos {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+          .logos img {
+            width: 125px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+            margin: 5px; /* Optional: add some spacing between logos */
           }
 
           .grid-image {
