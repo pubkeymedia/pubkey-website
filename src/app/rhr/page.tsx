@@ -23,7 +23,7 @@ const SideBySideImagesWithPrice: React.FC<{ imageUrl1: string, imageUrl2: string
               borderRadius: '5px',
               margin: '0 auto',
             }}>
-              $50 STILL AVAILABLE
+              <b>$50 STILL AVAILABLE</b>
             </button>
         </div>
           </a></div>
@@ -38,7 +38,7 @@ const SideBySideImagesWithPrice: React.FC<{ imageUrl1: string, imageUrl2: string
               fontStyle: 'bold',
               backgroundColor: '#333',
               border: 'none',
-              color: 'white',
+              color: '#ccc',
               padding: '15px 32px',
               textAlign: 'center',
               display: 'inline-block',
@@ -46,7 +46,7 @@ const SideBySideImagesWithPrice: React.FC<{ imageUrl1: string, imageUrl2: string
               borderRadius: '5px',
               margin: '0 auto',
             }}>
-              <del>$121 SODL OUT!</del>
+              <b><del>$121 SODL OUT!</del></b>
             </button>
         </div>
         </div>
