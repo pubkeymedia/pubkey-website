@@ -8,12 +8,48 @@ const SideBySideImagesWithPrice: React.FC<{ imageUrl1: string, imageUrl2: string
           <img src={imageUrl1} alt="Image 1" className="item-image" />
         </a>
         <div className="item-name">{itemName1}</div>
-        <div className="item-price"><a href={linkUrl1} target="_blank" rel="noopener noreferrer">$50 STILL AVAILABLE</a></div>
+        <div className="item-price"><a href={linkUrl1} target="_blank" rel="noopener noreferrer">
+        <div className="button-container">
+            <button style={{
+              fontFamily: 'Arial, sans-serif',
+              fontStyle: 'bold',
+              backgroundColor: '#F66E22',
+              border: 'none',
+              color: 'white',
+              padding: '15px 32px',
+              textAlign: 'center',
+              display: 'inline-block',
+              fontSize: '14px',
+              borderRadius: '5px',
+              margin: '0 auto',
+            }}>
+              $50 STILL AVAILABLE
+            </button>
+        </div>
+          </a></div>
       </div>
       <div className="item-container">
           <img src={imageUrl2} alt="Image 2" className="item-image" />
         <div className="item-name">{itemName2}</div>
-        <div className="item-price"><del>$121 SODL OUT!</del></div>
+        <div className="item-price"> 
+        <div className="button-container">
+            <button style={{
+              fontFamily: 'Arial, sans-serif',
+              fontStyle: 'bold',
+              backgroundColor: '#333',
+              border: 'none',
+              color: 'white',
+              padding: '15px 32px',
+              textAlign: 'center',
+              display: 'inline-block',
+              fontSize: '14px',
+              borderRadius: '5px',
+              margin: '0 auto',
+            }}>
+              <del>$121 SODL OUT!</del>
+            </button>
+        </div>
+        </div>
       </div>
     </div>
   );
