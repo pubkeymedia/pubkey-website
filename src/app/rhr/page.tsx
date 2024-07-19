@@ -114,7 +114,7 @@ const YourPageWithPriceAndName: React.FC = () => {
             color: white;
             font-size: 16px;
             text-align: center;
-            margin-bottom: 10px;
+            margin: 50px 0 10px 0; /* Add 50px of space above and 10px below */
           }
 
           .logos-container {
