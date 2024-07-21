@@ -154,6 +154,10 @@ const YourPageWithPriceAndName: React.FC = () => {
               flex-direction: column;
             }
 
+            .item-image {
+              width: 100%; /* Increase the image size to 100% for mobile devices */
+            }
+
             .grid-image {
               width: 48%; /* Make the images take up almost half the width each */
               margin: 1%; /* Add a small margin to keep them apart */
