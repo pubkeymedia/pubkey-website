@@ -24,7 +24,7 @@ const SideBySideImagesWithPrice: React.FC<{ imageUrl1: string, linkUrl1: string,
                 borderRadius: '5px',
                 margin: '0 auto',
               }}>
-                <b>$50 STILL AVAILABLE</b>
+                <b>SODL OUT!</b>
               </button>
             </div>
           </a>
@@ -46,10 +46,6 @@ const ImageGrid: React.FC = () => {
           <img src="/images/rhr/strike_logo.jpg" alt="Strike" />
           <img src="/images/rhr/zeus_logo.jpg" alt="Zeus" />
         </div>
-      </div>
-      <div className="contact-text">
-        <p>Interested in becoming a sponsor?</p>
-        <p>Get in touch: <a href="mailto:events@port8333.io?subject=Hot Style Takeover Sponsorship"><b>events@port8333.io</b></a></p>
       </div>
     </div>
   );
@@ -183,8 +179,8 @@ const YourPageWithPriceAndName: React.FC = () => {
         `}
       </style>
       <SideBySideImagesWithPrice 
-        imageUrl1="/images/rhr/hotstyle-ga.jpg"
-        linkUrl1="https://pay.zaprite.com/pl_Ss72YiBcvL"
+        imageUrl1="/images/rhr/hotstyle-ga-sodl.jpg"
+        linkUrl1="https://pubkey.bar/productions"
         itemName1="GA HOT STYLE - JULY 25TH"
       />
       <ImageGrid />
