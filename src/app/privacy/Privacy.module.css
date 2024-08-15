@@ -1,0 +1,27 @@
+.container {
+  font-family: Helvetica, Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 150px; /* Adjust this value as needed */
+  height: auto;
+}
+
+.main h1,
+.main h2 {
+  color: #000;
+}
+
+.main ul {
+  padding-left: 20px;
+}
