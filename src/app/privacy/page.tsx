@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
       <h1>PubKey Privacy Policy</h1>
         <p><strong>Effective Date: August 15, 2024</strong></p>
 
-        <p>PubKey NYC LLC  ("we," "our," or "us") is committed to protecting the privacy of our website visitors and users ("you" or "your"). This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website and engage with our lead generation activities.</p>
+        <p>PubKey NYC LLC  (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting the privacy of our website visitors and users (&quot;you&quot; or &quot;your&quot;). This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website and engage with our lead generation activities.</p>
 
         <h2>1. Information We Collect</h2>
         <p>We may collect personal information that you voluntarily provide to us when you:</p>
