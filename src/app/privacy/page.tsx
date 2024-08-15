@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
         <h2>6. Data Security</h2>
         <p>We take reasonable measures to protect your personal information from unauthorized access, use, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure, so we cannot guarantee absolute security.</p>
 
-        <h2>7. Children's Privacy</h2>
+        <h2>7. Children&apos;s Privacy</h2>
         <p>Our website is not intended for children under the age of 13, and we do not knowingly collect personal information from children. If we become aware that we have inadvertently collected personal information from a child, we will take steps to delete it.</p>
 
         <h2>8. Changes to This Privacy Policy</h2>
