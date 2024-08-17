@@ -15,6 +15,7 @@ export const Ticker = () => (
         placeholder="blur"
         src="/images/homepage/ticker/spilled-beer.gif"
         width={384}
+        unoptimized
       />
       <MarqueeImage
         alt="Burger being built"
@@ -23,6 +24,7 @@ export const Ticker = () => (
         placeholder="blur"
         src="/images/homepage/ticker/built-burger.gif"
         width={384}
+        unoptimized
       />
       <MarqueeImage alt="A boilermaker" placeholder="blur" src={boilermakerImg} />
       <MarqueeImage
@@ -32,6 +34,7 @@ export const Ticker = () => (
         placeholder="blur"
         width={384}
         src="/images/homepage/ticker/built-hot-dog.gif"
+        unoptimized
       />
       <MarqueeImage
         alt="Pack of cigarettes next to an ash tray"
@@ -39,6 +42,7 @@ export const Ticker = () => (
         height={384}
         placeholder="blur"
         src="/images/homepage/ticker/thanks-bloomberg.gif"
+        unoptimized
         width={384}
       />
       <MarqueeImage
@@ -47,6 +51,7 @@ export const Ticker = () => (
         height={384}
         placeholder="blur"
         src="/images/homepage/ticker/wing-dip.gif"
+        unoptimized
         width={384}
       />
       <MarqueeImage alt="Chicken drumstick" placeholder="blur" src={drumstickImg} />
@@ -56,6 +61,7 @@ export const Ticker = () => (
         height={384}
         placeholder="blur"
         src="/images/homepage/ticker/payphone.gif"
+        unoptimized
         width={384}
       />
       <MarqueeImage alt="New York hot dog" src={nyHotdogImg} />
