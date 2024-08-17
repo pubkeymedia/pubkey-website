@@ -19,7 +19,7 @@ const ShopPage: NextPage<Props> = ({ products }) => {
         src="/images/shop/hero.gif"
       />
       <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center">
-        {products.map(({ featuredImage, onlineStoreUrl, priceRange, title }) => (
+        {products.map(({ featuredImage, onlineStoreUrl, priceRangeV2, title }) => (
           <a
             className="flex flex-col justify-between px-2 py-4 outline outline-black border-2 border-gray-300"
             key={title}
@@ -34,7 +34,7 @@ const ShopPage: NextPage<Props> = ({ products }) => {
               width={featuredImage.width}
             />
             <p className="text-xl tracking-widest uppercase">{title}</p>
-            <PriceRange priceRange={priceRange} />
+            <PriceRange priceRange={priceRangeV2} />
           </a>
         ))}
       </div>
@@ -46,14 +46,14 @@ const PriceRange: React.FC<{ priceRange: PriceRange }> = ({ priceRange }) => {
   if (priceRange.maxVariantPrice.amount === priceRange.minVariantPrice.amount) {
     return (
       <p className="text-lg">
-        {numberToFormattedUsdCurrency(Number(priceRange.maxVariantPrice.amount) / 100)}
+        {numberToFormattedUsdCurrency(Number(priceRange.maxVariantPrice.amount))}
       </p>
     );
   }
   return (
     <p className="text-lg">
-      {numberToFormattedUsdCurrency(Number(priceRange.minVariantPrice.amount) / 100)} &mdash;{' '}
-      {numberToFormattedUsdCurrency(Number(priceRange.maxVariantPrice.amount) / 100)}
+      {numberToFormattedUsdCurrency(Number(priceRange.minVariantPrice.amount))} &mdash;{' '}
+      {numberToFormattedUsdCurrency(Number(priceRange.maxVariantPrice.amount))}
     </p>
   );
 };
@@ -81,7 +81,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
                   width
                 }
                 onlineStoreUrl
-                priceRange {
+                priceRangeV2 {
                   maxVariantPrice {
                     amount
                   }
@@ -96,7 +96,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         }
       `,
     });
-    const products = result.body.data.products.edges.map((e) => e.node);
+    const products = result.body.data.products.edges
+      .map((e) => e.node)
+      .filter((p) => p.onlineStoreUrl);
     return { props: { products }, revalidate: 60 * 10 };
   } catch (e) {
     if (e instanceof Error) {
@@ -113,7 +115,7 @@ type PriceRange = { maxVariantPrice: VariantPrice; minVariantPrice: VariantPrice
 type Product = {
   featuredImage: Image;
   onlineStoreUrl: string;
-  priceRange: PriceRange;
+  priceRangeV2: PriceRange;
   title: string;
 };
 type QueryResult = {
