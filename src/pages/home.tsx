@@ -109,7 +109,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   if (!compScreen) throw new Error('No comp screen found');
 
   return {
-    props: { compScreen, events: events ?? [] },
+    props: { compScreen, events },
     revalidate: 60 * 15, // 15 minutes
   };
 };

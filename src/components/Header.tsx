@@ -25,6 +25,7 @@ const HeaderLink: React.FC<PropsWithChildren<{ href: string }>> = (props) => {
     <Link
       className={clsx('py-4 px-3 md:px-8', isSelected && 'underline underline-offset-4')}
       {...props}
+      prefetch={false}
     />
   );
 };

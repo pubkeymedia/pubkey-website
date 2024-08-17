@@ -82,7 +82,7 @@ const YesNoSelection: React.FC = () => {
         ) : (
           <div />
         )}
-        <Link className="flex focus:outline-0" ref={yesRef} href="/home">
+        <Link className="flex focus:outline-0" prefetch={false} ref={yesRef} href="/home">
           Yes
         </Link>
       </div>
