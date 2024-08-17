@@ -2,6 +2,7 @@ import React from 'react';
 import { Meetup } from '../../lib/meetup';
 import { formatIsoDate } from '../../lib/strings';
 import '../../styles/globals.css';
+import { AutoRefresh } from './AutoRefresh';
 
 const meetup = new Meetup();
 const Meetups = async () => {
@@ -15,6 +16,7 @@ const Meetups = async () => {
         </p>
       ))}
       <p className="animate-blink">_</p>
+      <AutoRefresh />
     </div>
   );
 };
