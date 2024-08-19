@@ -31,7 +31,7 @@ const Menu = () => {
               </div>
               <div>
                 <FoodName>Wings &mdash; $12</FoodName>
-                <FoodDescription>6 PC $12 / 12 PC $22</FoodDescription>
+                <FoodDescription>6 pc $12 / 12 pz $22</FoodDescription>
                 <FoodDescription>BUFFALO OR RED BBQ DRY</FoodDescription>
                 <FoodDescription>RANCH OR BLEU</FoodDescription>
               </div>
@@ -124,7 +124,7 @@ const Menu = () => {
                 <div>
                   <FoodName>Pubkey Stek Frets</FoodName>
                   <FoodDescription className="font-bold">
-                    80Z. $35 / 120Z. $55 / POUND TOWN $69
+                    8 oz. $35 / 12 oz. $55 / POUND TOWN $69
                   </FoodDescription>
                   <FoodDescription>
                     RIB EYE / GARLIC BUTTER / THRICE COOKED PUB FRIES
@@ -133,7 +133,7 @@ const Menu = () => {
                 <div>
                   <FoodName>Fish & Chips $24</FoodName>
                   <FoodDescription>
-                    TALLOW-FRIED / ON BRAND BATTER TAH-TAH SAUCE / OL&apos; BAE
+                    TALLOW-FRIED / ON BRAND BATTER / TAH-TAH SAUCE / OL&apos; BAE
                   </FoodDescription>
                 </div>
               </FoodTypeSection>
