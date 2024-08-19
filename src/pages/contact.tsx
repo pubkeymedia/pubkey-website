@@ -2,26 +2,16 @@ import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
+import slogan from '../../public/images/contact/slogan.svg';
+import payphone from '../../public/images/contact/payphone.svg';
 
 const Contact: NextPage = () => {
   return (
     <div className="flex flex-col gap-y-16">
       <NextSeo title="Contact" />
-      <Image
-        alt="The Pubkey slogan"
-        className="self-center"
-        height={200}
-        src="/images/contact/slogan.svg"
-        width={1024}
-      />
+      <Image alt="The Pubkey slogan" className="self-center" src={slogan} />
       <div className="flex flex-col md:flex-row gap-16 lg:gap-x-48 w-full max-w-5xl">
-        <Image
-          alt="A payphone"
-          className="self-center"
-          height={400}
-          src="/images/contact/payphone.svg"
-          width={200}
-        />
+        <Image alt="A payphone" className="self-center" src={payphone} width={200} />
         <div className="flex flex-col gap-y-8">
           <h2 className="uppercase text-xl tracking-wider">Contact</h2>
           <div className="font-redaction text-lg tracking-wider">

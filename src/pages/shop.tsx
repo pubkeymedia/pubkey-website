@@ -3,6 +3,7 @@ import type { GetStaticProps, NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
+import hero from '../../public/images/shop/hero.gif';
 
 const ShopPage: NextPage<Props> = ({ products }) => {
   return (
@@ -11,13 +12,7 @@ const ShopPage: NextPage<Props> = ({ products }) => {
         description="The PubKey store is the place for merch. Who doesn’t love merch? When I walk into my favorite dive bar I expect to see merchandise! And when the trains aren’t running, I want to be able to buy my favorite merch online! So I go straight to the PubKey online store and pick up my favorite merch straight from my couch! It rules!"
         title="Shop"
       />
-      <Image
-        alt="Family You Choose"
-        className="w-full"
-        height={600}
-        width={1024}
-        src="/images/shop/hero.gif"
-      />
+      <Image alt="Family You Choose" className="w-full" src={hero} />
       <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center">
         {products.map(({ featuredImage, onlineStoreUrl, priceRangeV2, title }) => (
           <a

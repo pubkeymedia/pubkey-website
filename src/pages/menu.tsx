@@ -3,18 +3,14 @@ import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
+import barMenu from '../../public/images/menu/bar-menu.svg';
+import chickenWang from '../../public/images/menu/chicken-wang.svg';
 
 const Menu = () => {
   return (
     <div className="flex flex-col items-center">
       <NextSeo title="Menu" />
-      <Image
-        alt="Bar Menu"
-        className="max-w-xl w-full"
-        height={300}
-        width={1024}
-        src="/images/menu/bar-menu.svg"
-      />
+      <Image alt="Bar Menu" className="max-w-xl w-full" src={barMenu} />
       <div className="flex flex-col gap-y-8">
         <div className="border-8 border-red-400 rounded-2xl flex flex-col gap-y-16 py-16 px-8">
           <div className="grid grid-cols-1 items-center md:grid-cols-3 md:items-start relative gap-8">
@@ -49,7 +45,7 @@ const Menu = () => {
               alt="A chicken wing."
               className="absolute opacity-70 md:relative md:opacity-100 h-full md:h-auto col-span-1 md:order-1"
               height={420}
-              src="/images/menu/chicken-wang.svg"
+              src={chickenWang}
               width={269}
             />
           </div>
