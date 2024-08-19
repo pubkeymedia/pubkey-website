@@ -121,25 +121,20 @@ const Menu = () => {
             </FoodTypeSection>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-y-8">
             <div className="relative md:static flex flex-col flex-grow h-full justify-between">
-              <Image
-                alt="A payphone."
-                className="absolute h-full md:h-auto opacity-5 rotate-12"
-                height={420}
-                src="/images/homepage/ticker/payphone.gif"
-                width={269}
-              />
               <FoodTypeSection>
                 <FoodType>MAINSTAYS</FoodType>
                 <div>
                   <FoodName>Pubkey Stek Frets</FoodName>
-                  <FoodDescription>80Z. $35 / 120Z. $55 / POUND TOWN $69</FoodDescription>
+                  <FoodDescription className="font-bold">
+                    80Z. $35 / 120Z. $55 / POUND TOWN $69
+                  </FoodDescription>
                   <FoodDescription>
                     RIB EYE / GARLIC BUTTER / THRICE COOKED PUB FRIES
                   </FoodDescription>
                 </div>
-                <div className="font-redaction tracking-wide">
+                <div>
                   <FoodName>Fish & Chips $24</FoodName>
                   <FoodDescription>
                     TALLOW-FRIED / ON BRAND BATTER TAH-TAH SAUCE / OL&apos; BAE
