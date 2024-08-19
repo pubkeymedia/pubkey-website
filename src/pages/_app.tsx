@@ -8,31 +8,31 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const isLandingPage = landingPagePaths.includes(router.pathname);
+  const isFullScreen = fullScreenPaths.includes(router.pathname);
 
   return (
     <div
       className={clsx(
-        isLandingPage && 'bg-gray-300',
+        isFullScreen && 'bg-gray-300',
         'flex flex-col h-screen justify-between font-sans'
       )}
     >
       <NextSeo defaultTitle="Pubkey" titleTemplate="Pubkey | %s" />
 
-      {!isLandingPage && <Header />}
+      {!isFullScreen && <Header />}
       <main
         className={clsx(
-          !isLandingPage && 'px-2 sm:px-8 xl:px-0 py-8 max-w-7xl mx-auto',
+          !isFullScreen && 'px-2 sm:px-8 xl:px-0 py-8 max-w-7xl mx-auto',
           'flex flex-col flex-grow w-full'
         )}
       >
         <Component {...pageProps} />
       </main>
-      {!isLandingPage && <Footer />}
+      {!isFullScreen && <Footer />}
     </div>
   );
 }
 
-const landingPagePaths = ['/', '/meetups', '/try-again'];
+const fullScreenPaths = ['/', '/meetups', '/try-again'];
 
 export default MyApp;

@@ -40,7 +40,11 @@ export const Footer = () => {
               src="/images/footer/8bit-twitter-logo.png"
             />
           </a>
-          <a href="https://primal.net/p/npub1key55ax33gkl50uqemvl4khrtqrhzm7wzpc7fhseutt5ddkcwcrqgxlt3h" target="_blank" rel="noreferrer">
+          <a
+            href="https://primal.net/p/npub1key55ax33gkl50uqemvl4khrtqrhzm7wzpc7fhseutt5ddkcwcrqgxlt3h"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               alt="Nostr logo"
               height={64}
@@ -64,7 +68,7 @@ export const Footer = () => {
               src="/images/footer/8bit-tiktok-logo.png"
             />
           </a>
-          <a href="http://gemini.sjv.io/OrxEDA" target="_blank" rel="noreferrer">
+          <a href="https://gemini.sjv.io/OrxEDA" target="_blank" rel="noreferrer">
             <Image
               alt="Gemini logo"
               height={64}
