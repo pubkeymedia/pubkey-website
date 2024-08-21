@@ -32,8 +32,8 @@ const Menu = () => {
               <div>
                 <FoodName>Wings &mdash; $12</FoodName>
                 <FoodDescription>6 pc $12 / 12 pz $22</FoodDescription>
-                <FoodDescription>BUFFALO OR RED BBQ DRY</FoodDescription>
-                <FoodDescription>RANCH OR BLEU</FoodDescription>
+                <FoodDescription>BUFFALO or RED BBQ DRY</FoodDescription>
+                <FoodDescription>RANCH or BLEU</FoodDescription>
               </div>
               <div>
                 <FoodName>Elotes &mdash; $12</FoodName>
