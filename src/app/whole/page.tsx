@@ -36,7 +36,7 @@ const Whole: React.FC = () => {
           left: '50%',
           transform: 'translate(-50%, -50%)',
         }}>
-          <a href="https://www.youtube.com/watch?v=3cJwVT1RyWE">
+          <a href="https://rumble.com/v5bhe0t-whole-find-your-one-in-21-million.html">
             <button style={{
               fontFamily: 'Arial, sans-serif',
               fontStyle: 'bold',

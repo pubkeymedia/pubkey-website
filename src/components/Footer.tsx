@@ -13,7 +13,7 @@ export const Footer = () => {
         <div className="grid grid-rows-1 grid-cols-7 gap-x-4 items-center self-center max-w-sm lg:max-w-lg">
           <a
             className="col-span-1"
-            href="https://www.youtube.com/@Pubkeymediahouse"
+            href="https://www.youtube.com/@PubKeyBroadcastSystem"
             target="_blank"
             rel="noreferrer"
           >
