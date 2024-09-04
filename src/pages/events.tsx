@@ -4,12 +4,11 @@ import { type MeetupEvent, Meetup } from '../lib/meetup';
 import { formatIsoDate } from '../lib/strings';
 
 const EventsPage: NextPage<Props> = ({ events }) => {
-<NextSeo
-        title="Events"
-        description="Things to do instead of sitting home drinking alone and watching the bitcoin price all night" />
-
   return (
     <div className="flex flex-col px-4 md:px-16 space-y-8 md:space-y-16">
+      <NextSeo
+        title="Events"
+        description="Things to do instead of sitting home drinking alone and watching the bitcoin price all night" />
       <h1 className="text-5xl">Upcoming Events</h1>
       <div className="flex flex-col gap-y-2">
         {events.map((event) => {
