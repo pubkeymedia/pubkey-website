@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         'flex flex-col h-screen justify-between font-sans'
       )}
     >
-      <NextSeo defaultTitle="Pubkey" titleTemplate="Pubkey | %s" />
+      <NextSeo defaultTitle="PubKey" titleTemplate="PubKey | %s" />
 
       {!isFullScreen && <Header />}
       <main
