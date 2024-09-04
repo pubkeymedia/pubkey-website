@@ -16,8 +16,8 @@ const Home: NextPage<Props> = ({ compScreen, events }) => {
   return (
     <div className="flex flex-col items-center w-full">
       <NextSeo
-        title="Home"
-        description="All those other cool websites wish they could be as sweet the PubKey homepage. It tells the story of a friend who loves video poker and dive bars. His luck isn’t very good. Care to try yours?" />
+        title="Welcome Home"
+        description="All those other cool websites wish they could be as sweet as the PubKey homepage. It tells the story of a friend who loves video poker and dive bars. His luck isn’t very good. Care to try yours?" />
       <Image alt="Bartender" className="max-w-5xl w-full" priority src={bartender} />
       <Ticker />
       <div className="gap-8 grid grid-cols-1 md:grid-cols-2 w-full">
