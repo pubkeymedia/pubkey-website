@@ -122,7 +122,7 @@ const Menu = () => {
               <FoodTypeSection>
                 <FoodType>MAINSTAYS</FoodType>
                 <div>
-                  <FoodName>Pubkey Stek Frets</FoodName>
+                  <FoodName>PubKey Stek Frets</FoodName>
                   <FoodDescription className="font-bold">
                     8 oz. $35 / 12 oz. $55 / POUND TOWN $69
                   </FoodDescription>
