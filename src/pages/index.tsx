@@ -5,8 +5,10 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { AiFillCaretRight } from 'react-icons/ai';
 import landingPageImg from '../../public/images/landing-page/landing-page.gif';
+import { NextSeo } from 'next-seo';
 
 const Home: NextPage = () => {
+  <NextSeo title="PubKey | Beer, Hot Dogs, Burgers, Bitcoin Events" />
   const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
     const popupTimeout = setTimeout(() => setShowPopup(true), 2_500);
