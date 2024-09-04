@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="bg-gray-300 px-2 py-4 md:px-8 text-xl">
       <div className="flex flex-col md:flex-row gap-y-6 gap-x-8 md:gap-x-16 md:justify-between max-w-6xl mx-auto">
         <div className="flex flex-col items-center md:items-start md:flex-shrink">
-          <Image alt="Pubkey logo" height={100} width={200} src="/images/logo.svg" />
+          <Image alt="PubKey logo" height={100} width={200} src="/images/logo.svg" />
           <p>&copy; {new Date().getFullYear()} | Est. 735075</p>
           <p>The family you choose!</p>
         </div>
