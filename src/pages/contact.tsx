@@ -24,7 +24,7 @@ const Contact: NextPage = () => {
               <a href="tel:3057734249">(305) 773-4249</a>
             </div>
             <p className="leading-6">
-              Job Inquiries: <a href="mailto:info@port8333.io">info@port8333.io</a>
+              Inquiries: <a href="mailto:events@port8333.io">events@port8333.io</a>
             </p>
             <a
               className="text-blue-600 visited:text-indigo-600 underline underline-offset-4"
