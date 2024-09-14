@@ -15,14 +15,10 @@ const Contact: NextPage = () => {
         <div className="flex flex-col gap-y-8">
           <h2 className="uppercase text-xl tracking-wider">Contact</h2>
           <div className="font-redaction text-lg tracking-wider">
-            <p>85 Washington Pl.</p>
+            <p>85 Washington Place</p>
             <p>New York, NY 10011</p>
           </div>
           <div className="flex flex-col font-redaction text-lg tracking-wider gap-y-3">
-            <div>
-              <p className="text-sm">Call or Text</p>
-              <a href="tel:3057734249">(305) 773-4249</a>
-            </div>
             <p className="leading-6">
               Inquiries: <a href="mailto:events@port8333.io">events@port8333.io</a>
             </p>
